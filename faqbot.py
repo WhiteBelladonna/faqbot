@@ -145,7 +145,7 @@ async def on_message(message):
         mc+=1
         io.writeVal(filepath, 'mirn.dcbt', mc)
         rnd = random.randint(1,100)
-        print(str(rnd))
+        print(str(message.author) + " rolled: " + str(rnd))
         if rnd < 25:
             await message.add_reaction(mirn)
         return

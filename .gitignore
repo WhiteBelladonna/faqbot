@@ -1,2 +1,4 @@
 files/TOKEN.dcbt
 __pycache__/
+.gitignore
+.gitattributes
