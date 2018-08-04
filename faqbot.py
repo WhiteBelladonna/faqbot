@@ -11,8 +11,8 @@ from discord.ext import commands
 
 #define the filepaths (#1 for local testing, #2 for server use)
 
-#filepath = 'E:/Coding/Python/06_FAQBot/files/' 
-filepath = './files/'
+filepath = 'E:/Coding/Python/faqbot/files/' 
+#filepath = './files/'
 
 #open the commands xml
 root = io.readXML(filepath,'data.xml')
@@ -62,6 +62,7 @@ help_en = io.gString(comm_en)
 
 #open the token file and mirn counter
 TOKEN = io.getToken(filepath)
+ADMIN = io.getAdmin(filepath)
 mc = io.getVal(filepath, 'mirn.dcbt')
 
 print("Loading Mirns: " + str(mc) +"\n")
@@ -136,11 +137,15 @@ async def on_message(message):
                 await message.channel.send(" ", embed=embed)
                 return
             else:
-                await message.channel.send(authfailed) 
+                await message.channel.send(authfailed)
+                print(message.author + " tried to access command d!aber!")
                 return
 
-    #mirn
-    if message.content.startswith("mirn" or "Mirn" or "MIRN" or "mirgen" or "Mirgen"):
+    #mirn v2
+    msg = message.content
+    str(msg[:6])
+    msg = msg.upper()
+    if msg[:4] == "MIRN" or msg[:6] == "MIRGEN":
         global mc
         mc+=1
         io.writeVal(filepath, 'mirn.dcbt', mc)
@@ -148,7 +153,8 @@ async def on_message(message):
         print(str(message.author) + " rolled: " + str(rnd))
         if rnd < 25:
             await message.add_reaction(mirn)
-        return
+        return    
+
 
     #mirn counter
     if message.content.startswith("d!mirn"):
@@ -158,38 +164,53 @@ async def on_message(message):
 
     #shutdown command
     if message.content.startswith('d!shutdown'):
-        if message.author.id == 137114422626877440:
+        if message.author.id == ADMIN:
             await message.channel.send("Shutting Down.")
             await client.close()
         else:
             await message.channel.send(authfailed)
+            print(str(message.author) + " tried to access command d!shutdown!")
         return
     
     #set channel
     if message.content.startswith('d!setchannel'):
-        if message.author.id == 137114422626877440:
+        if message.author.id == ADMIN:
             global msgchan
             msgchan = client.get_channel(int(message.content[13:]))
             print("Channel set to: " + str(msgchan))
+        else:
+            await message.channel.send(authfailed)
+            print(str(message.author) + " tried to access command d!setchannel!")
 
     #send messages
     if message.content.startswith('d!msg'):
-        if message.author.id == 137114422626877440:
+        if message.author.id == ADMIN:
             botstring = str(message.content[6:])
             await msgchan.send(botstring)
             return
+        else: 
+            await message.channel.send(authfailed)
+            print(str(message.author) + " tried to access command d!msg!")
         
     #read number of mirns from the beginning of time (WARNING, SLOW!)
-    # if message.content.startswith('d!mupdate'):
-    #     if message.author.id == 137114422626877440:
-    #         mc = 0
-    #         chann = client.get_channel(137246928227270656)
-    #         dhserv = fetchServer(137246928227270656)
-    #         async for message in chann.history(limit=99999999999999999999):
-    #             if message.content.startswith("mirn" or "Mirn" or "MIRN" or "mirgen" or "Mirgen"):
-    #                 mc +=1
-    #                 print(str(mc), end="\r")
-    #         print("Total Number of Mirns: "+str(mc))
+    if message.content.startswith('d!mupdate'):
+        if message.author.id == ADMIN:
+            mc = 0
+            chann = client.get_channel(137246928227270656)
+            dhserv = fetchServer(137246928227270656)
+            async for message in chann.history(limit=99999999999999999999):
+                msg = message.content
+                str(msg[:6])
+                msg = msg.upper()
+                if msg[:4] == "MIRN" or msg[:6] == "MIRGEN":
+                    mc +=1
+                    print(str(mc), end="\r")
+            print("Total Number of Mirns: "+str(mc))
+            io.writeVal(filepath, 'mirn.dcbt', mc)
+        else:
+            await message.channel.send(authfailed)
+            print(str(message.author) + " tried to access command d!mupdate!")
+
                 
 #this is executed on startup
 @client.event

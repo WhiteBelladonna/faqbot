@@ -51,3 +51,9 @@ def getToken(filepath):
     with open(filepath+'TOKEN.dcbt', 'r') as f:
         TOKEN = f.read()
     return TOKEN
+
+def getAdmin(filepath):
+    with open(filepath+'ADMIN.dcbt', 'r') as f:
+        ADMIN = f.read()
+    ADMIN = int(ADMIN)
+    return ADMIN
