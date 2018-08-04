@@ -11,8 +11,8 @@ from discord.ext import commands
 
 #define the filepaths (#1 for local testing, #2 for server use)
 
-filepath = 'E:/Coding/Python/faqbot/files/' 
-#filepath = './files/'
+#filepath = 'E:/Coding/Python/faqbot/files/' 
+filepath = './files/'
 
 #open the commands xml
 root = io.readXML(filepath,'data.xml')
