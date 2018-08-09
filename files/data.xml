@@ -46,10 +46,10 @@
 <command>
     <cde>f!Tickets</cde>
     <qde>Wann startet der Ticketverkauf?</qde>
-    <ade>Der Vorverkauf startet am 11. September 2018 auf der [Website](http://www.dreamhack-leipzig.de).</ade>
+    <ade>Der Vorverkauf startet am 11. September 2018 auf der [Website](http://www.dreamhack-leipzig.de).Die Preise und Ausstattungen können [hier](http://www.dreamhack-leipzig.de/de/info/tickets/Oeffnungszeiten-und-Preise/) eingesehen werden!</ade>
     <ceng>f!tickets</ceng>
     <qeng>When do the ticket sales start?</qeng>
-    <aeng>Ticket sales start on the 11th of Septemnber 2018 on the [website](http://www.dreamhack-leipzig.de/en/?language=en).</aeng>
+    <aeng>Ticket sales start on the 11th of Septemnber 2018 on the [website](http://www.dreamhack-leipzig.de/en/?language=en).Ticket prices can be found [here](http://www.dreamhack-leipzig.de/de/info/tickets/Oeffnungszeiten-und-Preise/)!</aeng>
 </command>
 <command>
     <cde>f!Platzreservierung</cde>
