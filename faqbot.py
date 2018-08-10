@@ -119,6 +119,8 @@ async def on_message(message):
                 if message.content == comm_en[i]:
                     index = i
                 else:
+                    await message.channel.send(authfailed)
+                    print(str(message.author)+ " used an unknown command (" +str(message.content)+")")
                     return
         if german == 1:
             embed = dcf.FAQ(q_de[index], a_de[index], dhorange)
