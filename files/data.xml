@@ -14,7 +14,7 @@
 <command>
     <cde>f!Zapfanlage</cde>
     <qde>Darf ich eine Zapfanlage mitbringen?</qde>
-    <ade>Zapfanlagen, auch __ohne__ Gasflaschen sind nicht gestattet. \nDie Alkoholbereitstellung ist auf der LAN in Form von Bier auch so gut gewährleistet!</ade>
+    <ade>Zapfanlagen, auch __ohne__ Gasflaschen sind nicht gestattet. Die Alkoholbereitstellung ist auf der LAN in Form von Bier auch so gut gewährleistet!</ade>
     <ceng>f!beerkegs</ceng>
     <qeng>Can I bring my own beer keg?</qeng>
     <aeng>Kegs, as well as keg systems (even without CO2 bottles) are __not__ permitted.</aeng>
@@ -90,5 +90,21 @@
     <ceng>f!tournaments</ceng>
     <qeng>Which tournaments will be held?</qeng>
     <aeng>As of today, no tournaments have been announced yet.</aeng>
+</command>
+<command>
+    <cde>f!Hardwareverleih</cde>
+    <qde>Wird es wieder einen Hardwareverleih geben?</qde>
+    <ade>Ein Hardwareverleih wurde bereits bestätigt, jedoch sind noch keine genaueren Details bekannt. Diese werden hier natürlich nach Bekanntgabe ergänzt.</ade>
+    <ceng>f!rentals</ceng>
+    <qeng>Will I be able to rent hardware again?</qeng>
+    <aeng>Yes, hardware rentals are already confirmed. The details are yet to be announced though.</aeng>
+</command>
+<command>
+    <cde>f!Stühle</cde>
+    <qde>Wie sieht es mit Gaming-Stühlen aus?</qde>
+    <ade>Ein Verleih von Stühlen wurde bereits bestätigt. Weitere Details werden hier nach Bekanntgabe ergänzt.</ade>
+    <ceng>f!chairs</ceng>
+    <qeng>Will I be able to rent a gaming chair?</qeng>
+    <aeng>Yes, chair rentals are already confirmed. Further details will be added soon.</aeng>
 </command>
 </commandlist>
