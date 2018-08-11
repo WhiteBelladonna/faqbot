@@ -91,7 +91,7 @@
     <qeng>Which tournaments will be held?</qeng>
     <aeng>As of today, no tournaments have been announced yet.</aeng>
 </command>
-<command>
+<!--<command>
     <cde>f!Hardwareverleih</cde>
     <qde>Wird es wieder einen Hardwareverleih geben?</qde>
     <ade>Ein Hardwareverleih wurde bereits bestätigt, jedoch sind noch keine genaueren Details bekannt. Diese werden hier natürlich nach Bekanntgabe ergänzt.</ade>
@@ -106,5 +106,5 @@
     <ceng>f!chairs</ceng>
     <qeng>Will I be able to rent a gaming chair?</qeng>
     <aeng>Yes, chair rentals are already confirmed. Further details will be added soon.</aeng>
-</command>
+</command>-->
 </commandlist>
