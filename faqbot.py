@@ -22,6 +22,7 @@ dhorange = 16738079
 faqchannel = "<#376765597226106890>"
 authfailed = "I\'m sorry Dave, I\'m afraid I can\'t do that."
 mirnemoji = "DHCactus"
+mirnchance = 33
 
 
 #initialize users and emoji
@@ -153,7 +154,7 @@ async def on_message(message):
         io.writeVal(filepath, 'mirn.dcbt', mc)
         rnd = random.randint(1,100)
         print(str(message.author) + " rolled: " + str(rnd))
-        if rnd < 25:
+        if rnd < mirnchance:
             await message.add_reaction(mirn)
         return    
 
