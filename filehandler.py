@@ -29,8 +29,16 @@ def process(lst, st1, st2):
 #function that generates a string from a list without the first element
 def gString(lst):
     string = ""
-    for i in range(1,len(lst)-1):
-        string = string + lst[i] + "  |  "
+    for i in range(1,len(lst)-2):
+        string = string + ("f!"+lst[i]) + "  |  "
+    string = string + lst[len(lst)-1]
+    return string
+
+def eString(lst):
+    string = ""
+    for i in range(1,len(lst)-2):
+        string = string + ("fe!"+lst[i]) + "  |  "
+    string = string + lst[len(lst)-1]
     return string
 
 #get an integer value from a file
@@ -57,3 +65,16 @@ def getAdmin(filepath):
         ADMIN = f.read()
     ADMIN = int(ADMIN)
     return ADMIN
+
+#function to remove any leetspeak from command strings (anti troll measure)
+def unLeet(strIn):
+    ph = strIn
+    ph = ph.replace("!","i")
+    ph = ph.replace("1","i")
+    ph = ph.replace("$","s")
+    ph = ph.replace("5","s")
+    ph = ph.replace("7","t")
+    ph = ph.replace("4","a")
+    ph = ph.replace("3","e")
+    ph = ph.replace("@","a")
+    return ph

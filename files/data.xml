@@ -1,77 +1,77 @@
 <commandlist>
 <command>
     <cde>f!help</cde>
-    <ceng>f!hENG</ceng>
+    <ceng>fe!help</ceng>
 </command>
 <command>
-    <cde>f!Kühlschrank</cde>
+    <cde>Kühlschrank</cde>
     <qde>Darf ich einen Kühlschrank mitbringen?</qde>
     <ade>Nein, das mitbringen von Kühlschränken ist __nicht__ gestattet!</ade>
-    <ceng>f!fridge</ceng>
+    <ceng>fridge</ceng>
     <qeng>Can I bring my fridge?</qeng>
     <aeng>No, refridgerators are __not__ allowed!</aeng>
 </command>
 <command>
-    <cde>f!Zapfanlage</cde>
+    <cde>Zapfanlage</cde>
     <qde>Darf ich eine Zapfanlage mitbringen?</qde>
     <ade>Zapfanlagen, auch __ohne__ Gasflaschen sind nicht gestattet. Die Alkoholbereitstellung ist auf der LAN in Form von Bier auch so gut gewährleistet!</ade>
-    <ceng>f!beerkegs</ceng>
+    <ceng>beerkegs</ceng>
     <qeng>Can I bring my own beer keg?</qeng>
     <aeng>Kegs, as well as keg systems (even without CO2 bottles) are __not__ permitted.</aeng>
 </command>
 <command>
-    <cde>f!Lankabel</cde>
+    <cde>Lankabel</cde>
     <qde>Muss ich ein Lankabel mitbringen?</qde>
     <ade>Nein, ein Lankabel findest du an deinem Platz! \nDenk aber daran eine Mehrfachsteckdose mitzubringen!</ade>
-    <ceng>f!patchcable</ceng>
+    <ceng>patchcable</ceng>
     <qeng>Do I need to bring my own patch cable?</qeng>
     <aeng>No, you will find one provided at your seat! \nPlease remember to bring a multi socket though!</aeng>
 </command>
 <command>
-    <cde>f!Pavillon</cde>
+    <cde>Pavillon</cde>
     <qde>Darf ich einen Pavillon aufbauen?</qde>
     <ade>Ja, wenn bestimmte Voraussetzungen erfüllt sind. Die Übersicht dazu findest du im #faqchannel</ade>
-    <ceng>f!pavilion</ceng>
+    <ceng>pavilion</ceng>
     <qeng>Can I bring a pavilion?</qeng>
     <aeng>Yes, if you keep certain precautions in mind. It needs to be B2 certified, not be larger than 30m² and must be at least one pavilion width away from neighboring pavilions.</aeng>
 </command>
 <command>
-    <cde>f!Verbindungsprobleme</cde>
+    <cde>Verbindungsprobleme</cde>
     <qde>Ich habe Verbindungsprobleme!</qde>
     <ade>Bei Verbindungsproblemen wende dich bitte an den Support! \nAlternativ kannst du zunächst mittels !ipconfig release und !ipconfig renew in der Eingabeaufforderung versuchen das Problem zu lösen.</ade>
-    <ceng>f!connectionissues</ceng>
+    <ceng>connectionissues</ceng>
     <qeng>I have connection issues!</qeng>
     <aeng>Please contact the support helpdesk for this issue. \nAlternatively you can try to fix this yourself first by using !ipconfig release and !ipconfig renew in the command prompt.</aeng>
 </command>
 <command>
-    <cde>f!Tickets</cde>
+    <cde>Tickets</cde>
     <qde>Wann startet der Ticketverkauf?</qde>
     <ade>Der Vorverkauf startet am 11. September 2018 auf der [Website](http://www.dreamhack-leipzig.de).Die Preise und Ausstattungen können [hier](http://www.dreamhack-leipzig.de/de/info/tickets/Oeffnungszeiten-und-Preise/) eingesehen werden!</ade>
-    <ceng>f!tickets</ceng>
+    <ceng>tickets</ceng>
     <qeng>When do the ticket sales start?</qeng>
     <aeng>Ticket sales start on the 11th of Septemnber 2018 on the [website](http://www.dreamhack-leipzig.de/en/?language=en).Ticket prices can be found [here](http://www.dreamhack-leipzig.de/de/info/tickets/Oeffnungszeiten-und-Preise/)!</aeng>
 </command>
 <command>
-    <cde>f!Platzreservierung</cde>
+    <cde>Platzreservierung</cde>
     <qde>Wann beginnt die Sitzplatzreservierung?</qde>
     <ade>Es ist noch kein Termin bekannt. Nach Bekanntgabe wird dieser hier ergänzt!</ade>
-    <ceng>f!seating</ceng>
+    <ceng>seating</ceng>
     <qeng>When does the seating start?</qeng>
     <aeng>Dates for the seating have not yet been announced.</aeng>
 </command>
 <command>
-    <cde>f!Parkplätze</cde>
+    <cde>Parkplätze</cde>
     <qde>Wo und wie kann ich Parken?</qde>
     <ade>Eine Übersicht über die Parkflächen bekommst du im offiziellen [Forum](https://forum.dreamhack-leipzig.de/t/anfahrt-und-parken/1664). \nEs reicht, wenn der Fahrer ein LAN Seat+ Ticket besitzt, um auf den + Parkplätzen parken zu können.</ade>
-    <ceng>f!parking</ceng>
+    <ceng>parking</ceng>
     <qeng>Where and how can I park?</qeng>
     <aeng>An overview over parking spaces is available in the official [forum](https://forum.dreamhack-leipzig.de/t/anfahrt-und-parken/1664)</aeng>
 </command>
 <command>
-    <cde>f!Wasserkocher</cde>
+    <cde>Wasserkocher</cde>
     <qde>Darf ich einen Wasserkocher mitbringen?</qde>
     <ade>Nein, am Platz dürfen __keine__ Wasserkocher betrieben werden. Der Zugriff auf Wasserkocher wird höchstwahrscheinlich wieder über eine Kitchenette möglich sein.</ade>
-    <ceng>f!kettles</ceng>
+    <ceng>kettles</ceng>
     <qeng>Can I bring an electric kettle?</qeng>
     <aeng>No, electric kettles are not permitted. Kettles will most likely be accessable again via a kitchenette.</aeng>
 </command>
@@ -79,7 +79,7 @@
     <cde>f!LAN.User</cde>
     <qde>Wie werde ich LAN.User?</qde>
     <ade>Eine genaue Anleitung dazu findet ihr im #faqchannel</ade>
-    <ceng>f!lanuser</ceng>
+    <ceng>lanuser</ceng>
     <qeng>How do I become a LAN.User?</qeng>
     <aeng>Please check the #faqchannel for an extensive answer to this question.</aeng>
 </command>
@@ -87,7 +87,7 @@
     <cde>f!Turniere</cde>
     <qde>Welche Turniere gibt es?</qde>
     <ade>Bisher wurden noch keine Turniere bekanntgegeben. Nach Bekanntgabe werden diese hier ergänzt</ade>
-    <ceng>f!tournaments</ceng>
+    <ceng>tournaments</ceng>
     <qeng>Which tournaments will be held?</qeng>
     <aeng>As of today, no tournaments have been announced yet.</aeng>
 </command>

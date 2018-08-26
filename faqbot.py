@@ -22,7 +22,7 @@ dhorange = 16738079
 faqchannel = "<#376765597226106890>"
 authfailed = "I\'m sorry Dave, I\'m afraid I can\'t do that."
 mirnemoji = "DHCactus"
-mirnchance = 33
+mirnchance = 40
 
 
 #initialize users and emoji
@@ -51,14 +51,14 @@ print("Answers read.\n")
 
 #replace instances of faqchannel in text with the channel id
 a_de = io.process(a_de, "#faqchannel", faqchannel)
-a_en = io.process(a_de, "#faqchannel", faqchannel)
+a_en = io.process(a_en, "#faqchannel", faqchannel)
 print("Answers processed.\n")
 print('------\n')
 
 
 #generating strings for help commands
 help_de = io.gString(comm_de)
-help_en = io.gString(comm_en)
+help_en = io.eString(comm_en)
 
 
 #open the token file and mirn counter
@@ -81,7 +81,7 @@ def fetchServer(id):
 
 #define the status message of the bot
 async def GameChanger():
-    await client.change_presence(game=discord.Game(name="f!help"))
+    await client.change_presence(game=discord.Game(name="f!help | fe!help"))
 
 
 # message sending and stuff
@@ -94,7 +94,7 @@ async def on_message(message):
     if message.content.startswith(comm_de[0]):
         embed = discord.Embed(color=dhorange)
         embed.add_field(name="Befehle:", value=help_de)
-        embed.add_field(name="English Commands:", value="Type f!hENG")
+        embed.add_field(name="English Commands:", value="Type fe!help")
         dcf.Footer(embed)
         await message.channel.send(" ",embed=embed)
         return
@@ -107,32 +107,67 @@ async def on_message(message):
         await message.channel.send(" ",embed=embed)
         return
 
-    #befehle
+    #german commands
     if message.content.startswith("f!"):
-        index = 0
-        german = 0
+
+        # grab the message content and convert it into a string, then cut off the command prefix
+        gmsg = message.content
+        str(gmsg)
+        gmsg = gmsg[2:]
+
+        # check if there is an actual command or just mention of the command string
+        if gmsg[0] == " ":
+            return
+
+        #remove any leetspeak and convert to uppercase
+        gmsg = io.unLeet(gmsg)
+        gmsg = gmsg.upper()
+
+        # check for match of any known command in the xml file, then post help
         for i in range(len(comm_de)):
-            if message.content == comm_de[i]:
+            command = comm_de[i]
+            command = command.upper()
+            if gmsg == command:
                 index = i
-                german = 1
-        if german == 0:
-            for i in range(len(comm_en)):
-                if message.content == comm_en[i]:
-                    index = i
-                else:
-                    await message.channel.send(authfailed)
-                    print(str(message.author)+ " used an unknown command (" +str(message.content)+")")
-                    return
-        if german == 1:
-            embed = dcf.FAQ(q_de[index], a_de[index], dhorange)
-        elif german == 0:
-            embed = dcf.FAQENG(q_en[index], a_en[index], dhorange)
-        await message.channel.send(" ",embed=embed)
+                embed = dcf.FAQ(q_de[index], a_de[index], dhorange)
+                await message.channel.send(" ",embed=embed)
+                return
+        
+        # if none is found, return an error
+        await message.channel.send(authfailed)
+        print(str(message.author)+ " used an unknown command (" +str(message.content)+")")
         return
+    
+
+    #english commands - work the same way as german commands
+    if message.content.startswith("fe!"):
+        emsg = message.content
+        str(emsg)
+        emsg = emsg[3:]
+        
+        if emsg[0] == " ":
+            return
+
+        emsg = io.unLeet(emsg)
+        emsg = emsg.upper()
+
+        for i in range(len(comm_en)):
+            command = comm_en[i]
+            command = command.upper()
+            if emsg == command:
+                index = i
+                embed = dcf.FAQENG(q_en[index], a_en[index], dhorange)
+                await message.channel.send(" ",embed=embed)
+                return
+        
+        await message.channel.send(authfailed)
+        print(str(message.author)+ " used an unknown command (" +str(message.content)+")")
+        return
+
 
     if message.content.startswith("d!aber"):
         for i in range(len(message.author.roles)):
-            if message.author.roles[i] == megauser or admin or manager:
+            if message.author.roles[i] == megauser or message.author.roles[i] == admin or message.author.roles[i] == manager:
                 embed = discord.Embed(color=dhorange)
                 string = message.content[7:]
                 embed.add_field(name="Aber ...", value = "...was ist mit " + str(string)+"?")
