@@ -132,6 +132,18 @@ async def on_message(message):
                 embed = dcf.FAQ(q_de[index], a_de[index], dhorange)
                 await message.channel.send(" ",embed=embed)
                 return
+
+        # check for match of certain length (spellchecker)
+        for i in range(1,len(comm_de)):
+            command = comm_de[i]
+            commandu = command.upper()
+            for j in range (0,len(gmsg)-1):
+                k = len(gmsg) - j
+                ph1 = gmsg[:k]
+                ph2 = commandu[:k]
+                if ph1 == ph2:
+                    await message.channel.send("Meinten sie: f!" + command + "?")
+                    return    
         
         # if none is found, return an error
         await message.channel.send(authfailed)
@@ -159,6 +171,18 @@ async def on_message(message):
                 embed = dcf.FAQENG(q_en[index], a_en[index], dhorange)
                 await message.channel.send(" ",embed=embed)
                 return
+
+        # check for match of certain length (spellchecker)
+        for i in range(1,len(comm_en)):
+            command = comm_en[i]
+            commandu = command.upper()
+            for j in range (0,len(emsg)-1):
+                k = len(emsg) - j
+                ph1 = emsg[:k]
+                ph2 = commandu[:k]
+                if ph1 == ph2:
+                    await message.channel.send("Did you mean: fe!" + command + "?")
+                    return
         
         await message.channel.send(authfailed)
         print(str(message.author)+ " used an unknown command (" +str(message.content)+")")

@@ -31,14 +31,14 @@ def gString(lst):
     string = ""
     for i in range(1,len(lst)-2):
         string = string + ("f!"+lst[i]) + "  |  "
-    string = string + lst[len(lst)-1]
+    string = string + "f!" + lst[len(lst)-1]
     return string
 
 def eString(lst):
     string = ""
     for i in range(1,len(lst)-2):
         string = string + ("fe!"+lst[i]) + "  |  "
-    string = string + lst[len(lst)-1]
+    string = string + "fe!" + lst[len(lst)-1]
     return string
 
 #get an integer value from a file
@@ -78,3 +78,8 @@ def unLeet(strIn):
     ph = ph.replace("3","e")
     ph = ph.replace("@","a")
     return ph
+
+
+
+
+
