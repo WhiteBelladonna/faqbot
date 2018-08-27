@@ -2,7 +2,7 @@ import discord
 
 #initialize the client
 client = discord.Client()
-
+dhorange = 16738079
 
 #returns a specific emoji object from a server
 def fetchEmoji(server, name):
@@ -22,7 +22,7 @@ def addEmbed(embed, name, value):
     return embed
 
 #generates a footer for a given embed
-def Footer(embed):
+def footerGen(embed):
     embed.set_footer(text="FAQBot created by Demolite®")
     return embed
 
@@ -38,4 +38,20 @@ def FAQENG(question, answer, color):
     embed = discord.Embed(color=color)
     embed.add_field(name="Question:", value=question, inline=False)
     embed.add_field(name="Answer:", value=answer, inline=False)
+    return embed
+
+#generate help messages
+def helpDE(help_de):
+    embed = discord.Embed(color=dhorange)
+    embed.add_field(name="FAQ Befehl:", value="f!aq + Suchwort")
+    embed.add_field(name="Suchworte:", value=help_de)
+    embed.add_field(name="English Commands:", value="Type fe!help")
+    footerGen(embed)
+    return embed
+
+def helpEN(help_en):
+    embed = discord.Embed(color=dhorange)
+    embed.add_field(name="FAQ Command:", value="fe!aq + Keyword")
+    embed.add_field(name="Keywords:", value=help_en)
+    footerGen(embed)
     return embed
