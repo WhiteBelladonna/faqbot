@@ -50,3 +50,9 @@ def getAdmin(filepath):
         ADMIN = f.read()
     ADMIN = int(ADMIN)
     return ADMIN
+
+def getFeed(filepath):
+    with open(filepath+'FEED.dcbt', 'r') as f:
+        Feed = f.read()
+    Feed = int(Feed)
+    return Feed

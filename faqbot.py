@@ -31,7 +31,6 @@ unknown_en = "I don't recognize that command. Try checking my commandlist:"
 mirnemoji = "DHCactus"
 mirnchance = 40
 msgchan = 137246928227270656
-faquid = 342554861830930434
 faqcid = 484264883169525760
 
 
@@ -81,6 +80,7 @@ help_en = pu.gString(comm_en)
 #open the token file and mirn counter
 TOKEN = io.getToken(filepath)
 ADMIN = io.getAdmin(filepath)
+faquid = io.getFeed(filepath)
 mc = io.getVal(filepath, 'mirn.dcbt')
 
 print("Loading Mirns: " + str(mc) +"\n")
