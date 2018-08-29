@@ -31,6 +31,9 @@ unknown_en = "I don't recognize that command. Try checking my commandlist:"
 mirnemoji = "DHCactus"
 mirnchance = 40
 msgchan = 137246928227270656
+faquid = 342554861830930434
+faqcid = 484264883169525760
+
 
 
 #initialize users and emoji
@@ -38,6 +41,12 @@ mirn = None
 megauser = None
 admin = None
 manager = None
+faqdm = None
+faqmsgchan = None
+messagechannel = None
+dhserv = None
+
+
 
 #read in comm_des
 comm_de = io.fetch(root, 'cde')
@@ -86,6 +95,7 @@ def fetchServer(id):
 #define the status message of the bot
 async def GameChanger():
     await bot.change_presence(game=discord.Game(name="f!help | fe!help"))
+
 
 
 #define the different commands
@@ -213,6 +223,22 @@ async def mirnupdate(ctx):
             await ctx.message.channel.send(authfailed)
             print(str(ctx.message.author) + " tried to access admin restricted command d!mupdate!")
 
+@bot.command(name="eedback")
+async def feedback(ctx):
+    if ctx.prefix == "f!":
+        author = "<@"+str(ctx.message.author.id)+">"
+        creation = pu.createDate(ctx.message.created_at)
+        header = "Neues Feedback vom " + creation
+        message = pu.feedString(str(ctx.message.content))
+        feedback = "Feedback von User: {} \n\n".format(author)
+        feedback = feedback + message
+        print("Der User "+str(ctx.message.author)+"hat Feedback hinterlassen!")
+        embed = discord.Embed(color=dhorange)
+        dcf.addEmbed(embed, header, feedback)
+        await faqdm.send(" ", embed = embed)
+        await faqmsgchan.send(" ", embed = embed)
+        
+
 
 # message sending and stuff
 @bot.event
@@ -248,9 +274,13 @@ async def on_ready():
     print(bot.user.id)
     print('------')
     await GameChanger()
+    global dhserv, mirn, megauser, admin, manager, faqmsgchan, faqdm
     dhserv = fetchServer(137246928227270656)
     mirn = dcf.fetchEmoji(dhserv, mirnemoji)
     megauser = dcf.fetchRole(dhserv, "LAN.megauser")
     admin = dcf.fetchRole(dhserv, "Certified Admin")
     manager = dcf.fetchRole(dhserv, "Certified Manager")
+    faqmsgchan = bot.get_channel(faqcid)
+    faqdm = dcf.fetchUser(dhserv, faquid)
+
 bot.run(TOKEN, bot=True, reconnect=True)

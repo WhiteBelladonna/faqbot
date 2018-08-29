@@ -16,6 +16,11 @@ def fetchRole(server, name):
     print(str(role.name) + "-Role loaded from server: " + str(server.name))
     return role
 
+def fetchUser(server, uid):
+    user = discord.utils.get(server.members, id=uid)
+    print(str(user) + "-Loaded from Server: " + str(server.name)+" as FAQ Target")
+    return user
+
 #adds a field to a given embed
 def addEmbed(embed, name, value):
     embed.add_field(name=name, value=value, inline=False)
@@ -43,15 +48,17 @@ def FAQENG(question, answer, color):
 #generate help messages
 def helpDE(help_de):
     embed = discord.Embed(color=dhorange)
-    embed.add_field(name="FAQ Befehl:", value="f!aq + Suchwort")
-    embed.add_field(name="Suchworte:", value=help_de)
-    embed.add_field(name="English Commands:", value="Type fe!help")
+    embed.add_field(name="FAQ Befehl:", value="f!aq + Suchwort", inline=False)
+    embed.add_field(name="Suchworte:", value=help_de, inline=False)
+    embed.add_field(name="Feedback Einreichen:", value="f!eedback + _kompletter_ feedback Text", inline=False)
+    embed.add_field(name="English Commands:", value="Type fe!help", inline=False)
     footerGen(embed)
     return embed
 
 def helpEN(help_en):
     embed = discord.Embed(color=dhorange)
-    embed.add_field(name="FAQ Command:", value="fe!aq + Keyword")
-    embed.add_field(name="Keywords:", value=help_en)
+    embed.add_field(name="FAQ Command:", value="fe!aq + Keyword", inline=False)
+    embed.add_field(name="Keywords:", value=help_en, inline=False)
+    embed.add_field(name="Leave some Feedback:", value="f!eedback + _complete_ feedback text", inline=False)
     footerGen(embed)
     return embed

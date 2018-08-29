@@ -32,3 +32,23 @@ def gString(lst):
         string = string + (lst[i]) + "  |  "
     string = string + lst[len(lst)-1]
     return string
+
+#function that generates a feedback text
+def feedString(msg):
+    string = msg[9:]
+    return string 
+
+def parseNum(int):
+    if int < 10:
+        string = "0" + str(int)
+    else:
+        string = str(int)
+    return string
+
+def createDate(dtobj):
+    string = parseNum(int(dtobj.day))+"."
+    string = string + parseNum(int(dtobj.month))+"."
+    string = string + str(dtobj.year)+" um "
+    string = string + parseNum(int(dtobj.hour))+":"
+    string = string + parseNum(int(dtobj.minute))
+    return string
