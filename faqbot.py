@@ -96,6 +96,8 @@ def fetchServer(id):
 async def GameChanger():
     await bot.change_presence(game=discord.Game(name="f!help | fe!help"))
 
+
+
 #define the different commands
 @bot.command(name="shutdown")
 async def shutdown(ctx):
@@ -105,7 +107,7 @@ async def shutdown(ctx):
             await bot.close()
         else:
             await ctx.message.channel.send(authfailed)
-            print(str(ctx.author) + " tried to access admin restricted command d!shutdown!")
+            print(str(ctx.author) + " tried to access command d!shutdown!")
             return
 
 
@@ -120,18 +122,6 @@ async def help(ctx):
         await ctx.send(" ", embed=embed)
         return
 
-@bot.command(name="roles")
-async def roles(ctx):
-    if ctx.prefix == "d!":
-        rolstring = ""
-        for i in range(len(ctx.author.roles)):
-            rolstring = rolstring + " | " + str(ctx.author.roles[i])
-        msg = "Roles for user: " + str(ctx.message.author) + " : " + rolstring
-        print(msg) 
-        print(megauser)
-        print(admin)
-        print(manager)
-        await ctx.send(msg)
 
 @bot.command(name="aber")
 async def aber(ctx):
@@ -144,9 +134,10 @@ async def aber(ctx):
                 embed.set_image(url="https://media.giphy.com/media/xT0xeA1Eq7jidwWBoc/giphy.gif")
                 await ctx.message.channel.send(" ", embed=embed)
                 return
-        await ctx.message.channel.send(authfailed)
-        print(str(ctx.message.author) + " tried to access restricted command d!aber!")
-        return
+            else:
+                await ctx.message.channel.send(authfailed)
+                print(ctx.message.author + " tried to access command d!aber!")
+                return
 
 
 @bot.command(name="aq")
@@ -202,11 +193,10 @@ async def setchannel(ctx, arg):
 
 
 @bot.command(name="msg")
-async def sendmsg(ctx):
+async def sendmsg(ctx, arg):
     if ctx.prefix == "d!":
         if ctx.message.author.id == ADMIN:
-            botstring = str(ctx.message.content)
-            botstring = botstring[5:]
+            botstring = str(arg)
             await msgchan.send(botstring)
             return
         else: 
@@ -284,7 +274,7 @@ async def on_ready():
     print(bot.user.id)
     print('------')
     await GameChanger()
-    global dhserv, mirn, megauser, admin, manager, faqmsgchan, faqdm, msgchan
+    global dhserv, mirn, megauser, admin, manager, faqmsgchan, faqdm
     dhserv = fetchServer(137246928227270656)
     mirn = dcf.fetchEmoji(dhserv, mirnemoji)
     megauser = dcf.fetchRole(dhserv, "LAN.megauser")
@@ -292,6 +282,5 @@ async def on_ready():
     manager = dcf.fetchRole(dhserv, "Certified Manager")
     faqmsgchan = bot.get_channel(faqcid)
     faqdm = dcf.fetchUser(dhserv, faquid)
-    msgchan = bot.get_channel(msgchan)
 
 bot.run(TOKEN, bot=True, reconnect=True)
