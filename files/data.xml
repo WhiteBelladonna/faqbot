@@ -30,7 +30,7 @@
 <command>
     <cde>Pavillon</cde>
     <qde>Darf ich einen Pavillon aufbauen?</qde>
-    <ade>Überbauten (Zelt, Pavillon, etc.) sind im LAN Bereich grundsätzlich untersagt. Eine Ausnahme für Pavillons ohne Seitenwände kann bei vorhandener Brandschutzzertifizierung (B1) sowie zusammenhängend überdeckter Fläche von weniger als 30 m² sowie einem Abstand von 3 Metern zwischen überbauten Elementen erteilt werden. Die Prüfung erfolgt vor Ort. Ein Anspruch auf Ausnahmeerteilung besteht nicht.</ade>
+    <ade>Überbauten (Zelt, Pavillon, etc.) sind im LANBereich grundsätzlich untersagt. Eine Ausnahme für Pavillons ohne Seitenwände kann bei vorhandener Brandschutzzertifizierung (B1) sowie zusammenhängend überdeckter Fläche von weniger als 30 m² sowie einem Abstand von 3 Metern zwischen überbauten Elementen erteilt werden. Die Prüfung erfolgt vor Ort. Ein Anspruch auf Ausnahmeerteilung besteht nicht.</ade>
     <ceng>pavilion</ceng>
     <qeng>Can I bring a pavilion?</qeng>
     <aeng>Superstructions like tents, pavilons, etc. are generally prohibited within the LAN area. Exceptions may be made to pavilons without side walls which have a fire prevention certificate of level B1, as well as an overlay of max 30 m² and are placed with at least 3m disctance to other superstructions. Inspected on site with no claim on exception.</aeng>
@@ -38,6 +38,7 @@
 <command>
     <cde>Verbindungsprobleme</cde>
     <qde>Ich habe Verbindungsprobleme!</qde>
+    <!-- todo: Support-Bot verlinken (wenn der dann auch mit dem Ticketsystem der IT verbunden ist :-) -->
     <ade>Bei Verbindungsproblemen wende dich bitte an den Support! \nAlternativ kannst du zunächst mittels !ipconfig release und !ipconfig renew in der Eingabeaufforderung versuchen das Problem zu lösen.</ade>
     <ceng>connectionissues</ceng>
     <qeng>I have connection issues!</qeng>
@@ -46,21 +47,22 @@
 <command>
     <cde>Tickets</cde>
     <qde>Wann startet der Ticketverkauf?</qde>
-    <ade>Der Vorverkauf startet am 11. September 2018 auf der [Website](http://www.dreamhack-leipzig.de).Die Preise und Ausstattungen können [hier](http://www.dreamhack-leipzig.de/de/info/tickets/Oeffnungszeiten-und-Preise/) eingesehen werden!</ade>
+    <ade>Der Vorverkauf startet am 11.09.2018 auf der [Website](http://www.dreamhack-leipzig.de/tickets).Die Preise und Ausstattungen können [hier](http://www.dreamhack-leipzig.de/de/info/tickets/Oeffnungszeiten-und-Preise/) eingesehen werden!</ade>
     <ceng>tickets</ceng>
     <qeng>When do the ticket sales start?</qeng>
-    <aeng>Ticket sales start on the 11th of September 2018 on the [website](http://www.dreamhack-leipzig.de/en/?language=en).Ticket prices can be found [here](http://www.dreamhack-leipzig.de/de/info/tickets/Oeffnungszeiten-und-Preise/)!</aeng>
+    <aeng>Ticket sales start on the 11th of September 2018 on the [website](http://www.dreamhack-leipzig.de/en/tickets).Ticket prices can be found [here](http://www.dreamhack-leipzig.de/de/info/tickets/Oeffnungszeiten-und-Preise/)!</aeng>
 </command>
 <command>
     <cde>Platzreservierung</cde>
     <qde>Wann beginnt die Sitzplatzreservierung?</qde>
-    <ade>Es ist noch kein Termin bekannt. Nach Bekanntgabe wird dieser hier ergänzt!</ade>
+    <ade>Die Sitzplatzreservierung startet voraussichtlich im November 2018. Eine E-Mail mit deinen Zugangsdaten wird dich informieren.</ade>
     <ceng>seating</ceng>
     <qeng>When does the seating start?</qeng>
-    <aeng>Dates for the seating have not yet been announced.</aeng>
+    <aeng>Seating starts in November 2018. An E-Mail with a login will remind you.</aeng>
 </command>
 <command>
     <cde>Parkplätze</cde>
+    <!-- neue Übersicht einbetten - ggf. gleich den google-maps link?: https://www.google.com/maps/d/viewer?mid=1FK4KMbrLVpnNLsmEWLmhBdkgi2B1S5-m&ll=51.397943911899695%2C12.395008201275687&z=16 -->
     <qde>Wo und wie kann ich Parken?</qde>
     <ade>Eine Übersicht über die Parkflächen bekommst du im offiziellen [Forum](https://forum.dreamhack-leipzig.de/t/anfahrt-und-parken/1664). \nEs reicht, wenn der Fahrer ein LAN Seat+ Ticket besitzt, um auf den + Parkplätzen parken zu können.</ade>
     <ceng>parking</ceng>
@@ -90,14 +92,6 @@
     <ceng>tournaments</ceng>
     <qeng>Which tournaments will be held?</qeng>
     <aeng>As of today, no tournaments have been announced yet.</aeng>
-</command>
-<command>
-    <cde>AGB</cde>
-    <qde>Wo finde ich die AGB?</qde>
-    <ade>Die AGB findest du [hier](http://www.dreamhack-leipzig.de/media/PDF/2019/DRM19-LAN-AGB-Ticketshop-DE.pdf).</ade>
-    <ceng>Terms</ceng>
-    <qeng>Where can I  find the terms and conditions?</qeng>
-    <aeng>The terms and conditions can be found [here](http://www.dreamhack-leipzig.de/media/PDF/2019/DRM19-LAN-AGB-Ticketshop-EN.pdf).</aeng>
 </command>
 <!--<command>
     <cde>f!Hardwareverleih</cde>
