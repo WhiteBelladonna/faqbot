@@ -30,10 +30,10 @@
 <command>
     <cde>Pavillon</cde>
     <qde>Darf ich einen Pavillon aufbauen?</qde>
-    <ade>Ja, wenn bestimmte Voraussetzungen erfüllt sind. Die Übersicht dazu findest du im #faqchannel</ade>
+    <ade>Überbauten (Zelt, Pavillon, etc.) sind im LANBereich grundsätzlich untersagt. Eine Ausnahme für Pavillons ohne Seitenwände kann bei vorhandener Brandschutzzertifizierung (B1) sowie zusammenhängend überdeckter Fläche von weniger als 30 m² sowie einem Abstand von 3 Metern zwischen überbauten Elementen erteilt werden. Die Prüfung erfolgt vor Ort. Ein Anspruch auf Ausnahmeerteilung besteht nicht.</ade>
     <ceng>pavilion</ceng>
     <qeng>Can I bring a pavilion?</qeng>
-    <aeng>Yes, if you keep certain precautions in mind. It needs to be B2 certified, not be larger than 30m² and must be at least one pavilion width away from neighboring pavilions.</aeng>
+    <aeng>Superstructions like tents, pavilons, etc. are generally prohibited within the LAN area. Exceptions may be made to pavilons without side walls which have a fire prevention certificate of level B1, as well as an overlay of max 30 m² and are placed with at least 3m disctance to other superstructions. Inspected on site with no claim on exception.</aeng>
 </command>
 <command>
     <cde>Verbindungsprobleme</cde>
@@ -76,7 +76,7 @@
     <aeng>No, electric kettles are not permitted. Kettles will most likely be accessable again via a kitchenette.</aeng>
 </command>
 <command>
-    <cde>f!LAN.User</cde>
+    <cde>LAN.User</cde>
     <qde>Wie werde ich LAN.User?</qde>
     <ade>Eine genaue Anleitung dazu findet ihr im #faqchannel</ade>
     <ceng>lanuser</ceng>
