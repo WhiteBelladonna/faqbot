@@ -3,6 +3,8 @@ import aiohttp
 import filehandler as io
 import discordutils as dcf
 import parseutils as pu
+import scraper as sc
+import datetime
 
 import time
 import random
@@ -122,6 +124,18 @@ async def help(ctx):
         await ctx.send(" ", embed=embed)
         return
 
+@bot.command(name="remaining")
+async def remaining(ctx):
+    if ctx.prefix == "f!":
+        remaining, sold = sc.crawlTickets()
+        remst = str(sold) + " / 1800"
+        verst = str(remaining)
+        embed = discord.Embed(color=dhorange)
+        embed.add_field(name="Verkaufte Tickets:", value=remst, inline=False)
+        embed.add_field(name="Verbleibende Tickets:", value=verst, inline=False)
+        await ctx.send(" ", embed=embed)
+    else:
+        return
 
 @bot.command(name="aber")
 async def aber(ctx):
