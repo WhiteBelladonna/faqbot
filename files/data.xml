@@ -30,7 +30,7 @@
 <command>
     <cde>Pavillon</cde>
     <qde>Darf ich einen Pavillon aufbauen?</qde>
-    <ade>Überbauten (Zelt, Pavillon, etc.) sind im LANBereich grundsätzlich untersagt. Eine Ausnahme für Pavillons ohne Seitenwände kann bei vorhandener Brandschutzzertifizierung (B1) sowie zusammenhängend überdeckter Fläche von weniger als 30 m² sowie einem Abstand von 3 Metern zwischen überbauten Elementen erteilt werden. Die Prüfung erfolgt vor Ort. Ein Anspruch auf Ausnahmeerteilung besteht nicht.</ade>
+    <ade>Überbauten (Zelt, Pavillon, etc.) sind im LAN Bereich grundsätzlich untersagt. Eine Ausnahme für Pavillons ohne Seitenwände kann bei vorhandener Brandschutzzertifizierung (B1) sowie zusammenhängend überdeckter Fläche von weniger als 30 m² sowie einem Abstand von 3 Metern zwischen überbauten Elementen erteilt werden. Die Prüfung erfolgt vor Ort. Ein Anspruch auf Ausnahmeerteilung besteht nicht.</ade>
     <ceng>pavilion</ceng>
     <qeng>Can I bring a pavilion?</qeng>
     <aeng>Superstructions like tents, pavilons, etc. are generally prohibited within the LAN area. Exceptions may be made to pavilons without side walls which have a fire prevention certificate of level B1, as well as an overlay of max 30 m² and are placed with at least 3m disctance to other superstructions. Inspected on site with no claim on exception.</aeng>
@@ -90,6 +90,14 @@
     <ceng>tournaments</ceng>
     <qeng>Which tournaments will be held?</qeng>
     <aeng>As of today, no tournaments have been announced yet.</aeng>
+</command>
+<command>
+    <cde>AGB</cde>
+    <qde>Wo finde ich die AGB?</qde>
+    <ade>Die AGB findest du [hier](http://www.dreamhack-leipzig.de/media/PDF/2019/DRM19-LAN-AGB-Ticketshop-DE.pdf).</ade>
+    <ceng>Terms</ceng>
+    <qeng>Where can I  find the terms and conditions?</qeng>
+    <aeng>The terms and conditions can be found [here](http://www.dreamhack-leipzig.de/media/PDF/2019/DRM19-LAN-AGB-Ticketshop-EN.pdf).</aeng>
 </command>
 <!--<command>
     <cde>f!Hardwareverleih</cde>
