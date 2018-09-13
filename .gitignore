@@ -4,3 +4,4 @@ __pycache__/
 .gitignore
 .gitattributes
 files/FEED.dcbt
+files/VOTE.dcbt

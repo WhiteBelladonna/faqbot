@@ -60,21 +60,18 @@ def getFeed(filepath):
 def getUserList(filepath):
     with open(filepath+'VOTE.dcbt', 'r') as f:
         users = f.read().split(",")
-    print(users)
-    if users[0] == "0":
+    if users == "0":
         users = []
         return users
+    users = users[:len(users)-1]
     for i in range(len(users)):   
         users[i] = int(users[i])
     print(users)
+    
     return users
 
 def writeUserList(filepath, list):
     with open(filepath+'VOTE.dcbt', 'w') as f:
-        if len(list) > 1:
-            for i in range(len(list)-2):
-                f.write(str(list[i])+",")
-            f.write(str(list[len(list)-1]))
-        else:
-            f.write(str(list[0]))
+        for i in range(len(list)):
+            f.write(str(list[i])+",")
     return
