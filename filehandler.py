@@ -72,9 +72,9 @@ def getUserList(filepath):
 def writeUserList(filepath, list):
     with open(filepath+'VOTE.dcbt', 'w') as f:
         if len(list) > 1:
-            for i in range(len(list)-1):
+            for i in range(len(list)-2):
                 f.write(str(list[i])+",")
-            f.write(str(list[len(list)]))
+            f.write(str(list[len(list)-1]))
         else:
             f.write(str(list[0]))
     return

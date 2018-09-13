@@ -261,7 +261,6 @@ async def feedback(ctx):
 async def donnerstag(ctx):
     if ctx.prefix == "d!":
         global ul
-        print(ctx.message.author.id)
         for user in ul:
             if ctx.message.author.id == user:
                 await ctx.message.channel.send("Du hast bereits abgestimmt!") 
