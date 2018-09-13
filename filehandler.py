@@ -56,3 +56,16 @@ def getFeed(filepath):
         Feed = f.read()
     Feed = int(Feed)
     return Feed
+
+def getUserList(filepath):
+    with open(filepath+'VOTE.dcbt', 'r') as f:
+        users = f.read().splitlines()
+    for item in users:
+        item = int(item)
+    return users
+
+def writeUserList(filepath, list):
+    with open(filepath+'VOTE.dcbt', 'w') as f:
+        for item in list:
+            f.write(str(item)+'\n')
+    return

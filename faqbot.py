@@ -71,6 +71,11 @@ print("Answers read.\n")
 a_de = io.process(a_de, "#faqchannel", faqchannel)
 a_en = io.process(a_en, "#faqchannel", faqchannel)
 print("Answers processed.\n")
+
+#read a user list for voting
+ul = io.getUserList(filepath)
+print("Userlist read.\n")
+
 print('------\n')
 
 
@@ -251,8 +256,28 @@ async def feedback(ctx):
         dcf.addEmbed(embed, header, feedback)
         await faqdm.send(" ", embed = embed)
         await faqmsgchan.send(" ", embed = embed)
-        
 
+@bot.command(name="onnerstag")
+async def donnerstag(ctx):
+    if ctx.prefix == "d!":
+        global ul
+        print(ctx.message.author.id)
+        for user in ul:
+            if ctx.message.author.id == user:
+                await ctx.message.channel.send("Du hast bereits abgestimmt!") 
+                return
+
+        ul.append(ctx.message.author.id)
+        io.writeUserList(filepath, ul)
+        await ctx.message.channel.send("Stimme registriert!") 
+        return
+
+@bot.command(name="checkvote")
+async def checkvote(ctx):
+    if ctx.prefix == "d!":
+        embed = discord.Embed(color=dhorange)
+        dcf.addEmbed(embed, "Anzahl der User, die sich den Donnerstag wünschen: ", str(len(ul)))
+        await ctx.message.channel.send(" ", embed = embed)
 
 # message sending and stuff
 @bot.event
