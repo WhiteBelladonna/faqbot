@@ -215,7 +215,7 @@ async def setchannel(ctx, arg):
 async def sendmsg(ctx):
     if ctx.prefix == "d!":
         if ctx.message.author.id == ADMIN:
-            botstring = str(ctx.msg.content)
+            botstring = str(ctx.message.content)
             botstring = botstring[5:]
             await msgchan.send(botstring)
             return
