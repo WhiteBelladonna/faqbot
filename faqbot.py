@@ -212,10 +212,11 @@ async def setchannel(ctx, arg):
 
 
 @bot.command(name="msg")
-async def sendmsg(ctx, arg):
+async def sendmsg(ctx):
     if ctx.prefix == "d!":
         if ctx.message.author.id == ADMIN:
-            botstring = str(arg)
+            botstring = str(ctx.msg.content)
+            botstring = botstring[5:]
             await msgchan.send(botstring)
             return
         else: 
