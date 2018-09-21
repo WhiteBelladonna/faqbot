@@ -39,6 +39,11 @@ def gString(lst):
     string = string + lst[len(lst)]
     return string
 
+#new function that generates that string
+def gStringN(lst):
+    lst.pop(0)
+    return string = ' | '.join(lst)
+
 #function that generates a feedback text
 def feedString(msg):
     string = msg[9:]
