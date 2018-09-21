@@ -94,6 +94,14 @@
     <aeng>As of today, no tournaments have been announced yet.</aeng>
 </command>
 <!--<command>
+    <cde></cde>
+    <qde></qde>
+    <ade></ade>
+    <ceng></ceng>
+    <qeng></qeng>
+    <aeng></aeng>
+</command>-->
+<!--<command>
     <cde>f!Hardwareverleih</cde>
     <qde>Wird es wieder einen Hardwareverleih geben?</qde>
     <ade>Ein Hardwareverleih wurde bereits bestätigt, jedoch sind noch keine genaueren Details bekannt. Diese werden hier natürlich nach Bekanntgabe ergänzt.</ade>
