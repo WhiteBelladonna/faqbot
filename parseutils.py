@@ -12,7 +12,7 @@ def unLeet(strIn):
     return ph
 
 def cparse(tx):
-    tx = tx.replace("\\n","\u200B")
+    tx = tx.replace("\\n","\n \u200B")
     return tx
 
 def parseTXT(arg1):
