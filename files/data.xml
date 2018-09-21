@@ -62,7 +62,6 @@
 </command>
 <command>
     <cde>Parken</cde>
-    <!-- neue Übersicht einbetten - ggf. gleich den google-maps link?: https://www.google.com/maps/d/viewer?mid=1FK4KMbrLVpnNLsmEWLmhBdkgi2B1S5-m&ll=51.397943911899695%2C12.395008201275687&z=16 -->
     <qde>Wo und wie kann ich parken?</qde>
     <ade>Eine Übersicht über die Parkflächen erhältst du auf der [DreamHack Leipzig Website](http://www.dreamhack-leipzig.de/de/info/anreise-und-unterkunft/anreise/). \nUm an der Halle 5 Parken zu dürfen, benötigt das Auto mindestens ein LAN-Seat+/LAN-Seat XMG Ticket.</ade>
     <ceng>parking</ceng>
@@ -80,7 +79,7 @@
 <command>
     <cde>LAN.User</cde>
     <qde>Wie werde ich LAN.User? (so hübsch grün)</qde>
-    <ade>Drei Schritte sind nötig: 1. Beim Ticketkauf musst du deiner Datenweiterverarbeitung im Forum zustimmen, damit das Forum dir einen Account erstellt und/oder anhand deiner E-Mailadresse (Ticketbestellmailadresse = Forumaccountmailadresse) diesen als gültigen Account verifiziert. \n2. In [deinem Forenprofil](https://forum.dreamhack-leipzig.de/my/preferences/profile) trägst du deine Discord-ID im Format NICKNAMEWIEIMCHANNEL#NUMMER ein. \n 3. Der lustige Support-Bot läuft immer mal über die Profile und vergibt im Channel das grün.
+    <ade>Drei Schritte sind nötig:\n1. Beim Ticketkauf musst du deiner Datenweiterverarbeitung im Forum zustimmen, damit das Forum dir einen Account erstellt und/oder anhand deiner E-Mailadresse (Ticketbestellmailadresse = Forumaccountmailadresse) diesen als gültigen Account verifiziert. \n2. In [deinem Forenprofil](https://forum.dreamhack-leipzig.de/my/preferences/profile) trägst du deine Discord-ID im Format NICKNAMEWIEIMCHANNEL#NUMMER ein. \n3. Der lustige Support-Bot läuft immer mal über die Profile und vergibt im Channel das grün.
     </ade>
     <ceng>lanuser</ceng>
     <qeng>How do I become a LAN.User?</qeng>
@@ -115,7 +114,7 @@
     <ade>Nein! \nAber folge den ausgewiesenen Wegen und Anweisungen der Security und du kannst zwischen dem 15.2.2019, 8:00 Uhr und 17.2.2019, 17:00 Uhr die LAN-Halle (Halle 5) bequem betreten und verlassen so oft du willst :-)</ade>
 </command>
 <command>
-    <cde>turnieranmeldung</cde>
+    <cde>Turnieranmeldung</cde>
     <qde>Wer was wann wie wo mit der Turnieranmeldung?</qde>
     <ade>- Die Turniere zur DreamHack Leipzig LAN 2019 werden gerade noch ausgetüftelt und zugelost. Infos folgen!\n - FÜr eine erfolgreiche Anmeldung / Registrierung zu einem Turnier ist ein verifizierter Forenaccount notwendig \n- dafür ist deine Zustimmung zur Datenweiterverarbeitung im Ticketshop nötig (beim Kauf bzw. beim Setzen klickbar) \n- über die weiteren Schritte halten wir auf dem Laufenden :-) </ade>
     <ceng></ceng>
