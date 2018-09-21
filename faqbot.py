@@ -388,7 +388,7 @@ async def on_ready():
     print(bot.user.id)
     print('------')
     await GameChanger()
-    global dhserv, mirn, megauser, admin, manager, faqmsgchan, faqdm
+    global dhserv, mirn, megauser, admin, manager, faqmsgchan, faqdm, internal
     dhserv = fetchServer(137246928227270656)
     mirn = dcf.fetchEmoji(dhserv, mirnemoji)
     megauser = dcf.fetchRole(dhserv, "LAN.megauser")
