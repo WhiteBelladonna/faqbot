@@ -11,6 +11,10 @@ def unLeet(strIn):
     ph = ph.replace("@","a")
     return ph
 
+def cparse(tx):
+    tx = tx.replace("\\n","\u200B")
+    return tx
+
 def parseTXT(arg1):
     parg1 = unLeet(arg1)
     parg1 = parg1.upper()

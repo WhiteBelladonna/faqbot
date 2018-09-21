@@ -1,4 +1,5 @@
 import xml.etree.ElementTree as ET
+import parseutils as pu
 
 #function to open and parse the XML file
 def readXML(filepath, filename):
@@ -13,7 +14,8 @@ def fetch(root, name):
     for command in root:
         ph = command.find(name)
         if ph is not None:
-            lst.append(ph.text)
+            ph = pu.cparse(ph)
+            lst.append(ph)
         else:
             lst.append("")
     return lst
