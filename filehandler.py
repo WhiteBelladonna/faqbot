@@ -10,14 +10,13 @@ def readXML(filepath, filename):
 #function that returns a list of XML elements with a given name from the etree root
 def fetch(root, name):
     lst = []
-
     for command in root:
         ph = command.find(name)
-        if ph is not None:
-            ph = pu.cparse(ph.text)
-            lst.append(ph)
+        if ph is None or ph.text is None:
+            lst.append(" ")
         else:
-            lst.append("")
+            ph = pu.cparse(ph.text)
+            lst.append(ph)        
     return lst
 
 #function that replaces a substring in a list element with another substring
