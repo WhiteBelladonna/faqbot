@@ -14,7 +14,7 @@ def fetch(root, name):
     for command in root:
         ph = command.find(name)
         if ph is not None:
-            ph = pu.cparse(ph)
+            ph = pu.cparse(ph.text)
             lst.append(ph)
         else:
             lst.append("")
