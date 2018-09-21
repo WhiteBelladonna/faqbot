@@ -36,9 +36,7 @@ mirnemoji = "DHCactus"
 mirnchance = 40
 msgchan = 137246928227270656
 faqcid = 484264883169525760
-intid = 183158280216903680
-
-
+inid = 183158280216903680
 
 #initialize users and emoji
 mirn = None
@@ -49,7 +47,7 @@ faqdm = None
 faqmsgchan = None
 messagechannel = None
 dhserv = None
-internal = None
+indernal = None
 
 
 
@@ -108,25 +106,25 @@ async def GameChanger():
     await bot.change_presence(game=discord.Game(name="f!help | fe!help"))
 
 #check for restart commands
-# async def StateCheck():
-#     #check internal
-#     print("StateCheck on Internal")
-#     async for message in internal.history(limit=50):
-#         if message.content == "d!restart":
-#             print("Found Restart Command")
-#             dt = pu.dateProcess(message.created_at)
-#             await internal.send("Bot restarted. Downtime: " + dt)
-#             return
-#         elif message.content == "d!update":
-#             print("Found Update Command")
-#             dt = pu.dateProcess(message.created_at)
-#             await internal.send("Bot restarted and updated. Downtime: " + dt)
-#             return
-#         elif message.content == "d!shutdown":
-#             print("Found Shutdown Command")
-#             dt = pu.dateProcess(message.created_at)
-#             await internal.send("Bot online after Shutdown. Downtime: " + dt)
-#             return
+async def StateCheck():
+    #check internal
+    print("StateCheck on Internal")
+    async for message in internal.history(limit=50):
+        if message.content == "d!restart":
+            print("Found Restart Command")
+            dt = pu.dateProcess(message.created_at)
+            await internal.send("Bot restarted. Downtime: " + dt)
+            return
+        elif message.content == "d!update":
+            print("Found Update Command")
+            dt = pu.dateProcess(message.created_at)
+            await internal.send("Bot restarted and updated. Downtime: " + dt)
+            return
+        elif message.content == "d!shutdown":
+            print("Found Shutdown Command")
+            dt = pu.dateProcess(message.created_at)
+            await internal.send("Bot online after Shutdown. Downtime: " + dt)
+            return
 
 @bot.command(name="restart")
 async def restart(ctx):
@@ -383,7 +381,7 @@ async def on_ready():
     print(bot.user.id)
     print('------')
     await GameChanger()
-    #await StateCheck()
+    await StateCheck()
     dhserv = fetchServer(137246928227270656)
     mirn = dcf.fetchEmoji(dhserv, mirnemoji)
     megauser = dcf.fetchRole(dhserv, "LAN.megauser")
@@ -392,6 +390,5 @@ async def on_ready():
     faqmsgchan = bot.get_channel(faqcid)
     internal = bot.get_channel(intid)
     faqdm = dcf.fetchUser(dhserv, faquid)
-    
 
 bot.run(TOKEN, bot=True, reconnect=True)
