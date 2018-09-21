@@ -114,7 +114,6 @@
     <qde>Kann man die Halle betreten und verlassen wie man möchte?</qde>
     <ade>Nein! \nAber folge den ausgewiesenen Wegen und Anweisungen der Security und du kannst zwischen dem 15.2.2019, 8:00 Uhr und 17.2.2019, 17:00 Uhr die LAN-Halle (Halle 5) bequem betreten und verlassen so oft du willst :-)</ade>
 </command>
-
 <command>
     <cde>turnieranmeldung</cde>
     <qde>Wer was wann wie wo mit der Turnieranmeldung?</qde>
@@ -123,7 +122,6 @@
     <qeng></qeng>
     <aeng></aeng>
 </command>
-
 <!--<command>
     <cde></cde>
     <qde></qde>
@@ -148,11 +146,9 @@
     <qeng>Will I be able to rent a gaming chair?</qeng>
     <aeng>Yes, chair rentals are already confirmed. Further details will be added soon.</aeng>
 </command>-->
-
 <command>
     <cde>Frage</cde>
     <qde>Meine Frage ist nicht beantwortet :-(</qde>
     <ade>Dann schau bitte auch noch mal (mit der Suchfunktion deines Browsers :-) im [LAN-Forum](https://forum.dreamhack-leipzig.de/t/dreamhack-leipzig-lan-faq-2019/2330#lan) vorbei. Dort gibt es weitere gestammelte Werke.</ade>
 </command>
-
 </commandlist>
