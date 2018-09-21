@@ -31,18 +31,11 @@ def checkComm(commlist, comm):
                 return index
     return False
 
-#function that generates a string from a list without the first element
-def gString(lst):
-    string = ""
-    for i in range(1,len(lst)-1):
-        string = string + (lst[i]) + "  |  "
-    string = string + lst[len(lst)]
-    return string
-
 #new function that generates that string
 def gStringN(lst):
-    lst.pop(0)
-    return string = ' | '.join(lst)
+    lst.remove(0)
+    string = ' | '.join(lst)
+    return string
 
 #function that generates a feedback text
 def feedString(msg):
