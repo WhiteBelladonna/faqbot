@@ -117,12 +117,12 @@ async def StateCheck():
             dt = pu.dateProcess(message.created_at)
             await internal.send("Bot restarted. Downtime: " + dt)
             return
-        if message.content == "d!update":
+        elif message.content == "d!update":
             print("Found Update Command")
             dt = pu.dateProcess(message.created_at)
             await internal.send("Bot restarted and updated. Downtime: " + dt)
             return
-        if message.content == "d!shutdown":
+        elif message.content == "d!shutdown":
             print("Found Shutdown Command")
             dt = pu.dateProcess(message.created_at)
             await internal.send("Bot online after Shutdown. Downtime: " + dt)
