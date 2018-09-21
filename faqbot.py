@@ -111,8 +111,7 @@ async def GameChanger():
 async def StateCheck():
     #check internal
     print("StateCheck on Internal")
-    chann = bot.get_channel(intid)
-    async for message in chann.history(limit=50):
+    async for message in internal.history(limit=50):
         if message.content == "d!restart":
             print("Found Restart Command")
             dt = pu.dateProcess(message.created_at)
@@ -128,27 +127,6 @@ async def StateCheck():
             dt = pu.dateProcess(message.created_at)
             await internal.send("Bot online after Shutdown. Downtime: " + dt)
             return
-
-    #check general
-    print("StateCheck on General")
-    chann = bot.get_channel(137246928227270656)
-    async for message in chann.history(limit=50):
-        if message.content == "d!restart":
-            print("Found Restart Command")
-            dt = pu.dateProcess(message.created_at)
-            await internal.send("Bot restarted. Downtime: " + dt)
-            return
-        if message.content == "d!update":
-            print("Found Update Command")
-            dt = pu.dateProcess(message.created_at)
-            await internal.send("Bot restarted and updated. Downtime: " + dt)
-            return
-        if message.content == "d!shutdown":
-            print("Found Shutdown Command")
-            dt = pu.dateProcess(message.created_at)
-            await internal.send("Bot online after Shutdown. Downtime: " + dt)
-            return
-
 
 @bot.command(name="restart")
 async def restart(ctx):
