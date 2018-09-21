@@ -79,8 +79,9 @@
 </command>
 <command>
     <cde>LAN.User</cde>
-    <qde>Wie werde ich LAN.User?</qde>
-    <ade>Eine genaue Anleitung dazu findet ihr im #faqchannel</ade>
+    <qde>Wie werde ich LAN.User? (so hübsch grün)</qde>
+    <ade>Drei Schritte sind nötig: 1. Beim Ticketkauf musst du deiner Datenweiterverarbeitung im Forum zustimmen, damit das Forum dir einen Account erstellt und/oder anhand deiner E-Mailadresse (Ticketbestellmailadresse = Forumaccountmailadresse) diesen als gültigen Account verifiziert. \n2. In [deinem Forenprofil](https://forum.dreamhack-leipzig.de/my/preferences/profile) trägst du deine Discord-ID im Format NICKNAMEWIEIMCHANNEL#NUMMER ein. \n 3. Der lustige Support-Bot läuft immer mal über die Profile und vergibt im Channel das grün.
+    </ade>
     <ceng>lanuser</ceng>
     <qeng>How do I become a LAN.User?</qeng>
     <aeng>Please check the #faqchannel for an extensive answer to this question.</aeng>
@@ -111,13 +112,18 @@
 <command>
     <cde>Zutritt</cde>
     <qde>Kann man die Halle betreten und verlassen wie man möchte?</qde>
-    <ade>Nein! Aber folge den ausgewiesenen Wegen und Anweisungen der Security und du kannst zwischen dem 15.2.2019, 8:00 Uhr und 17.2.2019, 17:00 Uhr die LAN-Halle (Halle 5) bequem betreten und verlassen so oft du willst.</ade>
+    <ade>Nein! \nAber folge den ausgewiesenen Wegen und Anweisungen der Security und du kannst zwischen dem 15.2.2019, 8:00 Uhr und 17.2.2019, 17:00 Uhr die LAN-Halle (Halle 5) bequem betreten und verlassen so oft du willst :-)</ade>
 </command>
+
 <command>
-    <cde>Frage</cde>
-    <qde>Meine Frage ist nicht beantwortet :-(</qde>
-    <ade>Dann schau bitte auch noch mal (mit der Suchfunktion deines Browsers :-) im [LAN-Forum](https://forum.dreamhack-leipzig.de/t/dreamhack-leipzig-lan-faq-2019/2330#lan) vorbei. Dort gibt es weitere gestammelte Werke.</ade>
+    <cde>turnieranmeldung</cde>
+    <qde>Wer was wann wie wo mit der Turnieranmeldung?</qde>
+    <ade>- Die Turniere zur DreamHack Leipzig LAN 2019 werden gerade noch ausgetüftelt und zugelost. Infos folgen!\n - FÜr eine erfolgreiche Anmeldung / Registrierung zu einem Turnier ist ein verifizierter Forenaccount notwendig \n- dafür ist deine Zustimmung zur Datenweiterverarbeitung im Ticketshop nötig (beim Kauf bzw. beim Setzen klickbar) \n- über die weiteren Schritte halten wir auf dem Laufenden :-) </ade>
+    <ceng></ceng>
+    <qeng></qeng>
+    <aeng></aeng>
 </command>
+
 <!--<command>
     <cde></cde>
     <qde></qde>
@@ -142,4 +148,11 @@
     <qeng>Will I be able to rent a gaming chair?</qeng>
     <aeng>Yes, chair rentals are already confirmed. Further details will be added soon.</aeng>
 </command>-->
+
+<command>
+    <cde>Frage</cde>
+    <qde>Meine Frage ist nicht beantwortet :-(</qde>
+    <ade>Dann schau bitte auch noch mal (mit der Suchfunktion deines Browsers :-) im [LAN-Forum](https://forum.dreamhack-leipzig.de/t/dreamhack-leipzig-lan-faq-2019/2330#lan) vorbei. Dort gibt es weitere gestammelte Werke.</ade>
+</command>
+
 </commandlist>
