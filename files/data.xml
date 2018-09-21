@@ -97,41 +97,26 @@
     <cde>Tisch</cde>
     <qde>Wie groß ist mein Tisch?/qde>
     <ade>Der Bereich eines LAN-Seat / LAN-Seat+ ist 85 x 80 cm (BxT)\nDer Bereich eines LAN-Seat XMG hat die doppelte Breite [what?](https://www.google.de/search?q=taschenrechner)</ade>
-    <ceng></ceng>
-    <qeng></qeng>
-    <aeng></aeng>
 </command>
 <command>
     <cde>Anreise</cde>
     <qde>Wo muss ich lang?</qde>
     <ade>Informationen zur Anreise findest du auf der [DreamHack Leipzig Website](http://www.dreamhack-leipzig.de/de/info/anreise-und-unterkunft/anreise/) oder startest mit der wundervollen [Google Karte zur Orientierung](https://www.google.com/maps/d/viewer?mid=1FK4KMbrLVpnNLsmEWLmhBdkgi2B1S5-m&usp=sharing)</ade>
-    <ceng></ceng>
-    <qeng></qeng>
-    <aeng></aeng>
 </command>
 <command>
     <cde>Clan</cde>
     <qde>Wie kann ich einen weiteren Mitspieler meinem Clan hinzufügen?</qde>
     <ade>Ausgangsbasis: du bist Clanleader und hast schon feierlich für deine Mitspieler bestellt. Mit den Daten deiner Bestellung (Spielername, Mailadresse, Bestellnummer) und der Bestellung des Hinzuzufügenden wendest du dich dann vertrauensvoll an [die Verwalterin der LAN-Shops](congressregistration@leipziger-messe.de).</ade>
-    <ceng></ceng>
-    <qeng></qeng>
-    <aeng></aeng>
 </command>
 <command>
     <cde>Zutritt</cde>
     <qde>Kann man die Halle betreten und verlassen wie man möchte?</qde>
     <ade>Nein! Aber folge den ausgewiesenen Wegen und Anweisungen der Security und du kannst zwischen dem 15.2.2019, 8:00 Uhr und 17.2.2019, 17:00 Uhr die LAN-Halle (Halle 5) bequem betreten und verlassen so oft du willst.</ade>
-    <ceng></ceng>
-    <qeng></qeng>
-    <aeng></aeng>
 </command>
 <command>
     <cde>Frage</cde>
     <qde>Meine Frage ist nicht beantwortet :-(</qde>
     <ade>Dann schau bitte auch noch mal (mit der Suchfunktion deines Browsers :-) im [LAN-Forum](https://forum.dreamhack-leipzig.de/t/dreamhack-leipzig-lan-faq-2019/2330#lan) vorbei. Dort gibt es weitere gestammelte Werke.</ade>
-    <ceng></ceng>
-    <qeng></qeng>
-    <aeng></aeng>
 </command>
 <!--<command>
     <cde></cde>
