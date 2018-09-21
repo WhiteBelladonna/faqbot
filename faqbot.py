@@ -5,6 +5,8 @@ import discordutils as dcf
 import parseutils as pu
 import scraper as sc
 import datetime
+import subprocess
+import sys
 
 import time
 import random
@@ -103,6 +105,35 @@ def fetchServer(id):
 async def GameChanger():
     await bot.change_presence(game=discord.Game(name="f!help | fe!help"))
 
+@bot.command(name="restart")
+async def restart(ctx):
+    if ctx.prefix == "d!":
+        if ctx.author.id == ADMIN:
+           await ctx.message.channel.send("Restarting...")
+           subprocess.Popen([sys.executable, "./restart.py"])
+           await bot.close()
+           return
+        for i in range(len(ctx.author.roles)):
+             if ctx.author.roles[i] == admin:
+                await ctx.message.channel.send("Restarting...")
+                subprocess.Popen([sys.executable, "./restart.py"])
+                await bot.close()
+                return
+
+@bot.command(name="update")
+async def update(ctx):
+    if ctx.prefix == "d!":
+        if ctx.author.id == ADMIN:
+           await ctx.message.channel.send("Restarting...")
+           subprocess.Popen([sys.executable, "./update.py"])
+           await bot.close()
+           return
+        for i in range(len(ctx.author.roles)):
+             if ctx.author.roles[i] == admin:
+                await ctx.message.channel.send("Restarting...")
+                subprocess.Popen([sys.executable, "./update.py"])
+                await bot.close()
+                return
 
 
 #define the different commands
