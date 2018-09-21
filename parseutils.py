@@ -34,9 +34,9 @@ def checkComm(commlist, comm):
 #function that generates a string from a list without the first element
 def gString(lst):
     string = ""
-    for i in range(1,len(lst)-2):
+    for i in range(1,len(lst)-1):
         string = string + (lst[i]) + "  |  "
-    string = string + lst[len(lst)-1]
+    string = string + lst[len(lst)]
     return string
 
 #function that generates a feedback text
