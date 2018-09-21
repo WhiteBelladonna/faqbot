@@ -319,6 +319,23 @@ async def mirnupdate(ctx):
             await ctx.message.channel.send(authfailed)
             print(str(ctx.message.author) + " tried to access admin restricted command d!mupdate!")
 
+@bot.command(name="vupdate")
+async def voteupdate(ctx):
+    if ctx.prefix == "d!":
+        if ctx.message.author.id == ADMIN:
+            vc = []
+            chann = bot.get_channel(137246928227270656)
+            async for message in chann.history(limit=99999999999999999999):
+                msg = message.content
+                if msg == "d!onnerstag":
+                    vc.append(message.author.id)
+                    print(len(vc), end="\r")
+            print("Total Number of Votes: "+str(mc))
+            io.writeUserList(filepath, vc)
+        else:
+            await ctx.message.channel.send(authfailed)
+            print(str(ctx.message.author) + " tried to access admin restricted command d!mupdate!")
+
 @bot.command(name="eedback")
 async def feedback(ctx):
     if ctx.prefix == "f!":
