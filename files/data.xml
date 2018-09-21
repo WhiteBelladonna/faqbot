@@ -6,15 +6,15 @@
 <command>
     <cde>Kühlschrank</cde>
     <qde>Darf ich einen Kühlschrank mitbringen?</qde>
-    <ade>Nein, das mitbringen von Kühlschränken ist __nicht__ gestattet!</ade>
+    <ade>Nein, das Mitbringen von Kühlschränken ist __nicht__ gestattet!</ade>
     <ceng>fridge</ceng>
     <qeng>Can I bring my fridge?</qeng>
-    <aeng>No, refridgerators are __not__ allowed!</aeng>
+    <aeng>No, refrigerators are __not__ allowed!</aeng>
 </command>
 <command>
     <cde>Zapfanlage</cde>
     <qde>Darf ich eine Zapfanlage mitbringen?</qde>
-    <ade>Zapfanlagen, auch __ohne__ Gasflaschen sind nicht gestattet. Die Alkoholbereitstellung ist auf der LAN in Form von Bier auch so gut gewährleistet!</ade>
+    <ade>Zapfanlagen, auch __ohne__ Gasflaschen, sind nicht gestattet. Die Alkoholbereitstellung ist auf der LAN in Form von Bier auch so gut gewährleistet!</ade>
     <ceng>beerkegs</ceng>
     <qeng>Can I bring my own beer keg?</qeng>
     <aeng>Kegs, as well as keg systems (even without CO2 bottles) are __not__ permitted.</aeng>
@@ -22,7 +22,7 @@
 <command>
     <cde>Lankabel</cde>
     <qde>Muss ich ein Lankabel mitbringen?</qde>
-    <ade>Nein, ein Lankabel findest du an deinem Platz! \nDenk aber daran eine Mehrfachsteckdose mitzubringen!</ade>
+    <ade>Nein, ein Lankabel findest du an deinem Platz! \nDenk aber daran, eine Mehrfachsteckdose mitzubringen!</ade>
     <ceng>patchcable</ceng>
     <qeng>Do I need to bring my own patch cable?</qeng>
     <aeng>No, you will find one provided at your seat! \nPlease remember to bring a multi socket though!</aeng>
@@ -33,16 +33,16 @@
     <ade>Überbauten (Zelt, Pavillon, etc.) sind im LANBereich grundsätzlich untersagt. Eine Ausnahme für Pavillons ohne Seitenwände kann bei vorhandener Brandschutzzertifizierung (B1) sowie zusammenhängend überdeckter Fläche von weniger als 30 m² sowie einem Abstand von 3 Metern zwischen überbauten Elementen erteilt werden. Die Prüfung erfolgt vor Ort. Ein Anspruch auf Ausnahmeerteilung besteht nicht.</ade>
     <ceng>pavilion</ceng>
     <qeng>Can I bring a pavilion?</qeng>
-    <aeng>Superstructions like tents, pavilons, etc. are generally prohibited within the LAN area. Exceptions may be made to pavilons without side walls which have a fire prevention certificate of level B1, as well as an overlay of max 30 m² and are placed with at least 3m disctance to other superstructions. Inspected on site with no claim on exception.</aeng>
+    <aeng>Superstructions like tents, pavilions, etc. are generally prohibited within the LAN area. Exceptions may be made to pavilions without side walls which have a fire prevention certificate of level B1, as well as an overlay of max 30 m² and are placed with at least 3m distance to other superstructions. Inspected on site with no claim on exceptions.</aeng>
 </command>
 <command>
     <cde>Verbindungsprobleme</cde>
     <qde>Ich habe Verbindungsprobleme!</qde>
     <!-- todo: Support-Bot verlinken (wenn der dann auch mit dem Ticketsystem der IT verbunden ist :-) -->
-    <ade>Bei Verbindungsproblemen wende dich bitte an den Support! \nAlternativ kannst du zunächst mittels !ipconfig release und !ipconfig renew in der Eingabeaufforderung versuchen das Problem zu lösen.</ade>
+    <ade>Bei Verbindungsproblemen wende dich bitte an den Support! \nAlternativ kannst du zunächst mittels !ipconfig release und !ipconfig renew in der Eingabeaufforderung versuchen, das Problem zu lösen.</ade>
     <ceng>connectionissues</ceng>
     <qeng>I have connection issues!</qeng>
-    <aeng>Please contact the support helpdesk for this issue. \nAlternatively you can try to fix this yourself first by using !ipconfig release and !ipconfig renew in the command prompt.</aeng>
+    <aeng>Please contact the support helpdesk for this issue. \nAlternatively, you can try fixing this yourself first by using !ipconfig release and !ipconfig renew in the command prompt.</aeng>
 </command>
 <command>
     <cde>Tickets</cde>
@@ -67,7 +67,7 @@
     <ade>Eine Übersicht über die Parkflächen erhältst du auf der [DreamHack Leipzig Website](http://www.dreamhack-leipzig.de/de/info/anreise-und-unterkunft/anreise/). \nUm an der Halle 5 Parken zu dürfen, benötigt das Auto mindestens ein LAN-Seat+/LAN-Seat XMG Ticket.</ade>
     <ceng>parking</ceng>
     <qeng>Where and how can I park?</qeng>
-    <aeng>An overview over parking spaces is available in the official [DreamHack Leipzig website](http://www.dreamhack-leipzig.de/en/info/arrival-and-accommodation/anreise/).</aeng>
+    <aeng>An overview over parking spaces is available on the official [DreamHack Leipzig website](http://www.dreamhack-leipzig.de/en/info/arrival-and-accommodation/anreise/).</aeng>
 </command>
 <command>
     <cde>Wasserkocher</cde>
@@ -75,7 +75,7 @@
     <ade>Nein, am Platz dürfen __keine__ Wasserkocher betrieben werden. Der Zugriff auf Wasserkocher wird höchstwahrscheinlich wieder über eine Kitchenette möglich sein.</ade>
     <ceng>kettles</ceng>
     <qeng>Can I bring an electric kettle?</qeng>
-    <aeng>No, electric kettles are not permitted. Kettles will most likely be accessable again via a kitchenette.</aeng>
+    <aeng>No, electric kettles are not permitted. Kettles will most likely be accessible again via a kitchenette.</aeng>
 </command>
 <command>
     <cde>LAN.User</cde>
@@ -88,7 +88,7 @@
 <command>
     <cde>Turniere</cde>
     <qde>Welche Turniere gibt es?</qde>
-    <ade>Bisher wurden noch keine Turniere bekanntgegeben. Nach Bekanntgabe werden diese hier ergänzt</ade>
+    <ade>Bisher wurden noch keine Turniere bekanntgegeben. Nach Bekanntgabe werden diese hier ergänzt.</ade>
     <ceng>tournaments</ceng>
     <qeng>Which tournaments will be held?</qeng>
     <aeng>As of today, no tournaments have been announced yet.</aeng>
