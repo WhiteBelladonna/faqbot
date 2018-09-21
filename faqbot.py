@@ -381,7 +381,6 @@ async def on_ready():
     print(bot.user.id)
     print('------')
     await GameChanger()
-    await StateCheck()
     dhserv = fetchServer(137246928227270656)
     mirn = dcf.fetchEmoji(dhserv, mirnemoji)
     megauser = dcf.fetchRole(dhserv, "LAN.megauser")
@@ -390,5 +389,6 @@ async def on_ready():
     faqmsgchan = bot.get_channel(faqcid)
     internal = bot.get_channel(intid)
     faqdm = dcf.fetchUser(dhserv, faquid)
+    await StateCheck()
 
 bot.run(TOKEN, bot=True, reconnect=True)
