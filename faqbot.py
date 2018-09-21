@@ -36,7 +36,7 @@ mirnemoji = "DHCactus"
 mirnchance = 40
 msgchan = 137246928227270656
 faqcid = 484264883169525760
-inid = 183158280216903680
+intid = 183158280216903680
 
 #initialize users and emoji
 mirn = None
@@ -47,7 +47,7 @@ faqdm = None
 faqmsgchan = None
 messagechannel = None
 dhserv = None
-indernal = None
+internal = None
 
 
 
