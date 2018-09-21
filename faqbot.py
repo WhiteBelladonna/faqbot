@@ -53,7 +53,9 @@ internal = None
 
 #read in comm_des
 comm_de = io.fetch(root, 'cde')
+comm_de_upper = [s.upper() for s in comm_de]
 comm_en = io.fetch(root, 'ceng')
+comm_en_upper = [s.upper() for s in comm_en]
 print("Command lists read.\n")
 
 
@@ -217,6 +219,7 @@ async def aq(ctx, arg1):
         gmsg = str(arg1)
         gmsg = pu.parseTXT(gmsg)
         ph = pu.checkComm(comm_de, gmsg)
+        #ph = pu.checkComm(comm_de_upper, msg)
         if ph != False:
             embed = dcf.FAQ(q_de[ph], a_de[ph], dhorange)
             await ctx.send(" ",embed=embed)
@@ -231,6 +234,7 @@ async def aq(ctx, arg1):
         emsg = str(arg1)
         emsg = pu.parseTXT(emsg)
         ph = pu.checkComm(comm_en, emsg)
+        #ph = pu.checkComm(comm_en_upper, emsg)
         if ph != False:
             embed = dcf.FAQENG(q_en[ph], a_en[ph], dhorange)
             await ctx.send(" ",embed=embed)

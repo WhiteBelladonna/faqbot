@@ -5,3 +5,5 @@ __pycache__/
 .gitattributes
 files/FEED.dcbt
 files/VOTE.dcbt
+
+.vscode/settings.json

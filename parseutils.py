@@ -31,6 +31,17 @@ def checkComm(commlist, comm):
                 return index
     return False
 
+#checking if a command is in the list and returning the index
+def checkCommN(commlist, comm):
+    # Quatsch das jedes mal zu machen, habe im faqbot rumgewerkelt ...
+    # commlistUpper = [s.upper() for s in commlist]
+    try:
+        #index = commlistUpper.index(comm)
+        index = commlist.index(comm)
+        return index
+    except ValueError:
+        return False
+
 #new function that generates that string
 def gString(lst):
     a = lst.pop(0)
