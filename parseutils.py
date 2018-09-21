@@ -32,7 +32,7 @@ def checkComm(commlist, comm):
     return False
 
 #new function that generates that string
-def gStringN(lst):
+def gString(lst):
     lst.remove(0)
     string = ' | '.join(lst)
     return string
