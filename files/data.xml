@@ -101,7 +101,7 @@
 <command>
     <cde>Anreise</cde>
     <qde>Wo muss ich lang?</qde>
-    <ade>Informationen zur Anreise findest du auf der [DreamHack Leipzig Website](http://www.dreamhack-leipzig.de/de/info/anreise-und-unterkunft/anreise/) oder startest mit der wundervollen [Google Karte zur Orientierung](https://www.google.com/maps/d/viewer?mid=1FK4KMbrLVpnNLsmEWLmhBdkgi2B1S5-m\&usp=sharing)</ade>
+    <ade>Informationen zur Anreise findest du auf der [DreamHack Leipzig Website](http://www.dreamhack-leipzig.de/de/info/anreise-und-unterkunft/anreise/) oder startest mit der wundervollen [Google Karte zur Orientierung](https://www.google.com/maps/d/viewer?mid=1FK4KMbrLVpnNLsmEWLmhBdkgi2B1S5-m&amp;usp=sharing)</ade>
 </command>
 <command>
     <cde>Clan</cde>
