@@ -60,6 +60,7 @@ def createDate(dtobj):
     return string
 
 def dateProcess(dtobj):
-    ph = (dtobj-datetime.datetime.now()).total_seconds()
-    ph = str(ph) + " seconds"
+    ph = (datetime.datetime.now()-dtobj).total_seconds()
+    ph = str(ph/60)
+    ph = ph[4:] + " minutes"
     return ph
