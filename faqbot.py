@@ -108,25 +108,25 @@ async def GameChanger():
     await bot.change_presence(game=discord.Game(name="f!help | fe!help"))
 
 #check for restart commands
-async def StateCheck():
-    #check internal
-    print("StateCheck on Internal")
-    async for message in internal.history(limit=50):
-        if message.content == "d!restart":
-            print("Found Restart Command")
-            dt = pu.dateProcess(message.created_at)
-            await internal.send("Bot restarted. Downtime: " + dt)
-            return
-        elif message.content == "d!update":
-            print("Found Update Command")
-            dt = pu.dateProcess(message.created_at)
-            await internal.send("Bot restarted and updated. Downtime: " + dt)
-            return
-        elif message.content == "d!shutdown":
-            print("Found Shutdown Command")
-            dt = pu.dateProcess(message.created_at)
-            await internal.send("Bot online after Shutdown. Downtime: " + dt)
-            return
+# async def StateCheck():
+#     #check internal
+#     print("StateCheck on Internal")
+#     async for message in internal.history(limit=50):
+#         if message.content == "d!restart":
+#             print("Found Restart Command")
+#             dt = pu.dateProcess(message.created_at)
+#             await internal.send("Bot restarted. Downtime: " + dt)
+#             return
+#         elif message.content == "d!update":
+#             print("Found Update Command")
+#             dt = pu.dateProcess(message.created_at)
+#             await internal.send("Bot restarted and updated. Downtime: " + dt)
+#             return
+#         elif message.content == "d!shutdown":
+#             print("Found Shutdown Command")
+#             dt = pu.dateProcess(message.created_at)
+#             await internal.send("Bot online after Shutdown. Downtime: " + dt)
+#             return
 
 @bot.command(name="restart")
 async def restart(ctx):
@@ -383,7 +383,7 @@ async def on_ready():
     print(bot.user.id)
     print('------')
     await GameChanger()
-    await StateCheck()
+    #await StateCheck()
     dhserv = fetchServer(137246928227270656)
     mirn = dcf.fetchEmoji(dhserv, mirnemoji)
     megauser = dcf.fetchRole(dhserv, "LAN.megauser")
