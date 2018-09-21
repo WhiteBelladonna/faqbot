@@ -1,3 +1,5 @@
+import datetime
+
 #function to remove any leetspeak from command strings (anti troll measure)
 def unLeet(strIn):
     ph = strIn
@@ -56,3 +58,8 @@ def createDate(dtobj):
     string = string + parseNum(int(dtobj.hour))+":"
     string = string + parseNum(int(dtobj.minute))
     return string
+
+def dateProcess(dtobj):
+    ph = (dtobj-datetime.datetime.now()).total_seconds()
+    ph = str(ph) + " seconds"
+    return ph

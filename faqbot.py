@@ -36,6 +36,7 @@ mirnemoji = "DHCactus"
 mirnchance = 40
 msgchan = 137246928227270656
 faqcid = 484264883169525760
+intid = 183158280216903680
 
 
 
@@ -48,6 +49,7 @@ faqdm = None
 faqmsgchan = None
 messagechannel = None
 dhserv = None
+internal = None
 
 
 
@@ -104,6 +106,41 @@ def fetchServer(id):
 #define the status message of the bot
 async def GameChanger():
     await bot.change_presence(game=discord.Game(name="f!help | fe!help"))
+
+#check for restart commands
+async def StateCheck():
+    #check internal
+    chann = bot.get_channel(intid)
+    async for message in chann.history(limit=100):
+        if message.content == "d!restart":
+            dt = pu.dateProcess(message.created_at)
+            await internal.send("Bot restarted. Downtime: " + dt)
+            return
+        if message.content == "d!update":
+            dt = pu.dateProcess(message.created_at)
+            await internal.send("Bot restarted and updated. Downtime: " + dt)
+            return
+        if message.content == "d!shutdown":
+            dt = pu.dateProcess(message.created_at)
+            await internal.send("Bot online after Shutdown. Downtime: " + dt)
+            return
+
+    #check general
+    chann = bot.get_channel(137246928227270656)
+    async for message in chann.history(limit=100):
+        if message.content == "d!restart":
+            dt = pu.dateProcess(message.created_at)
+            await internal.send("Bot restarted. Downtime: " + dt)
+            return
+        if message.content == "d!update":
+            dt = pu.dateProcess(message.created_at)
+            await internal.send("Bot restarted and updated. Downtime: " + dt)
+            return
+        if message.content == "d!shutdown":
+            dt = pu.dateProcess(message.created_at)
+            await internal.send("Bot online after Shutdown. Downtime: " + dt)
+            return
+
 
 @bot.command(name="restart")
 async def restart(ctx):
@@ -331,7 +368,6 @@ async def on_message(message):
         if rnd < mirnchance:
             await message.add_reaction(mirn)
         return    
-            
                
 #this is executed on startup
 @bot.event
@@ -351,6 +387,8 @@ async def on_ready():
     admin = dcf.fetchRole(dhserv, "Certified Admin")
     manager = dcf.fetchRole(dhserv, "Certified Manager")
     faqmsgchan = bot.get_channel(faqcid)
+    internal = bot.get_channel(intid)
     faqdm = dcf.fetchUser(dhserv, faquid)
+    await StateCheck()
 
 bot.run(TOKEN, bot=True, reconnect=True)
