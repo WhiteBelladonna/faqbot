@@ -61,13 +61,13 @@
     <aeng>Seating starts in November 2018. An E-Mail with a login will remind you.</aeng>
 </command>
 <command>
-    <cde>Parkplätze</cde>
+    <cde>Parken</cde>
     <!-- neue Übersicht einbetten - ggf. gleich den google-maps link?: https://www.google.com/maps/d/viewer?mid=1FK4KMbrLVpnNLsmEWLmhBdkgi2B1S5-m&ll=51.397943911899695%2C12.395008201275687&z=16 -->
-    <qde>Wo und wie kann ich Parken?</qde>
-    <ade>Eine Übersicht über die Parkflächen bekommst du im offiziellen [Forum](https://forum.dreamhack-leipzig.de/t/anfahrt-und-parken/1664). \nEs reicht, wenn der Fahrer ein LAN Seat+ Ticket besitzt, um auf den + Parkplätzen parken zu können.</ade>
+    <qde>Wo und wie kann ich parken?</qde>
+    <ade>Eine Übersicht über die Parkflächen erhältst du auf der [DreamHack Leipzig Website](http://www.dreamhack-leipzig.de/de/info/anreise-und-unterkunft/anreise/). \nUm an der Halle 5 Parken zu dürfen, benötigt das Auto mindestens ein LAN-Seat+/LAN-Seat XMG Ticket.</ade>
     <ceng>parking</ceng>
     <qeng>Where and how can I park?</qeng>
-    <aeng>An overview over parking spaces is available in the official [forum](https://forum.dreamhack-leipzig.de/t/anfahrt-und-parken/1664)</aeng>
+    <aeng>An overview over parking spaces is available in the official [DreamHack Leipzig website](http://www.dreamhack-leipzig.de/en/info/arrival-and-accommodation/anreise/).</aeng>
 </command>
 <command>
     <cde>Wasserkocher</cde>
