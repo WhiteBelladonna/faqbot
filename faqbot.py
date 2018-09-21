@@ -380,7 +380,7 @@ async def on_message(message):
 #this is executed on startup
 @bot.event
 async def on_ready():
-    global mirn, megauser, admin, manager
+    global mirn, megauser, admin, manager, faqmsgchan, faqdm, internal
 
     print('------')
     print('Logged in as')
@@ -388,8 +388,7 @@ async def on_ready():
     print(bot.user.id)
     print('------')
     await GameChanger()
-    #await StateCheck()
-    global dhserv, mirn, megauser, admin, manager, faqmsgchan, faqdm, internal
+    await StateCheck()
     dhserv = fetchServer(137246928227270656)
     mirn = dcf.fetchEmoji(dhserv, mirnemoji)
     megauser = dcf.fetchRole(dhserv, "LAN.megauser")
