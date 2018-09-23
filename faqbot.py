@@ -17,10 +17,7 @@ prefixes = ["d!", "f!", "fe!"]
 bot = commands.Bot(command_prefix=prefixes)
 bot.remove_command("help")
 
-
-#define the filepaths (#1 for local testing, #2 for server use)
-
-#filepath = 'E:/Coding/Python/faqbot/files/' 
+#define the filepath
 filepath = './files/'
 
 #open the commands xml
@@ -49,14 +46,15 @@ messagechannel = None
 dhserv = None
 internal = None
 
-
-
 #read in comm_des
 comm_de = io.fetch(root, 'cde')
 comm_de_upper = [s.upper() for s in comm_de]
 comm_en = io.fetch(root, 'ceng')
 comm_en_upper = [s.upper() for s in comm_en]
 print("Command lists read.\n")
+
+print("German Commands:"+str(comm_de))
+print("English Commands:"+str(comm_en))
 
 
 #read in questions
@@ -109,6 +107,7 @@ async def GameChanger():
 
 #check for restart commands
 async def StateCheck():
+    await internal.send("")
     #check internal
     print("StateCheck on Internal")
     async for message in internal.history(limit=50):
@@ -164,7 +163,7 @@ async def update(ctx):
 async def shutdown(ctx):
     if ctx.prefix == "d!":
         if ctx.author.id == ADMIN:
-            await ctx.send("Ja Meister.")
+            await ctx.send("Shutting down...")
             await bot.close()
         else:
             await ctx.message.channel.send(authfailed)
@@ -212,40 +211,34 @@ async def aber(ctx):
                 print(ctx.message.author + " tried to access command d!aber!")
                 return
 
-
+#FAQ Command
 @bot.command(name="aq")
 async def aq(ctx, arg1):
-    if ctx.prefix == "f!":
-        gmsg = str(arg1)
-        gmsg = pu.parseTXT(gmsg)
-        ph = pu.checkComm(comm_de, gmsg)
-        #ph = pu.checkComm(comm_de_upper, msg)
-        if ph != False:
+    if ctx.prefix == "f!":                          #check for german prefix
+        gmsg = pu.faqParse(arg1)                    #parse the message (unleet, upper, fancy stuff)
+        ph = pu.checkCommN(comm_de_upper, gmsg)     #check for existing command
+        if ph is not False:
             embed = dcf.FAQ(q_de[ph], a_de[ph], dhorange)
-            await ctx.send(" ",embed=embed)
+            await ctx.send(" ", embed=embed)
             return
-        else: 
-            # if none is found, return an error and show all available commands
+        else:
             embed = dcf.helpDE(help_de)
             await ctx.send(unknown_de, embed=embed)
             print(str(ctx.message.author)+ " used an unknown command (" +str(ctx.message.content)+")")
             return
+
     if ctx.prefix == "fe!":
-        emsg = str(arg1)
-        emsg = pu.parseTXT(emsg)
-        ph = pu.checkComm(comm_en, emsg)
-        #ph = pu.checkComm(comm_en_upper, emsg)
-        if ph != False:
+        emsg = pu.faqParse(arg1)
+        ph = pu.checkCommN(comm_en_upper, emsg)
+        if ph is not False:
             embed = dcf.FAQENG(q_en[ph], a_en[ph], dhorange)
             await ctx.send(" ",embed=embed)
             return
-        else: 
-            # if none is found, return an error and show all available commands
+        else:
             embed = dcf.helpEN(help_en)
             await ctx.send(unknown_en, embed=embed)
             print(str(ctx.message.author)+ " used an unknown command (" +str(ctx.message.content)+")")
             return
-
 
 @bot.command(name="mirn")
 async def minn(ctx):
