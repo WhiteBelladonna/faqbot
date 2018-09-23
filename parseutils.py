@@ -85,7 +85,7 @@ def createDate(dtobj):
     return string
 
 def dateProcess(dtobj, dtobj2):
-    ph = (dtobj2-dtobj)
+    ph = (dtobj-dtobj2)
     print(str(ph))
     ph = ph.seconds
     print(str(ph))
