@@ -20,6 +20,7 @@ def unLeet(strIn):
 def embFormat(strIn):
     txt = strIn
     txt = txt.replace("\\n","\n \u200B")
+    txt = txt.replace("#faqchannel", "<#376765597226106890>")
     return txt
 
 #function to parse a faq message
@@ -85,8 +86,11 @@ def createDate(dtobj):
 
 def dateProcess(dtobj, dtobj2):
     ph = (dtobj2-dtobj)
+    print(str(ph))
     ph = ph.seconds
+    print(str(ph))
     ph = ph/60
+    print(str(ph))
     ph = str(ph)
     ph = ph[:4] + " minutes"
     return ph

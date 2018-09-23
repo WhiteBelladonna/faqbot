@@ -15,7 +15,17 @@ def fetch(root, name):
         if ph is None or ph.text is None:
             lst.append(" ")
         else:
-            ph = pu.cparse(ph.text)
+            lst.append(ph)        
+    return lst
+
+def fetchTXT(root, name):
+    lst = []
+    for command in root:
+        ph = command.find(name)
+        if ph is None or ph.text is None:
+            lst.append(" ")
+        else:
+            ph = pu.embFormat(ph.text)
             lst.append(ph)        
     return lst
 

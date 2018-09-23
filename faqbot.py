@@ -22,6 +22,7 @@ filepath = './files/'
 
 #open the commands xml
 root = io.readXML(filepath,'data.xml')
+print("XML file read \n")
 
 #ids for dreamhack int color code and faq channel, as well as permission denied message
 dhorange = 16738079
@@ -46,33 +47,31 @@ messagechannel = None
 dhserv = None
 internal = None
 
-#read in comm_des
+#read faq commands
 comm_de = io.fetch(root, 'cde')
-comm_de_upper = [s.upper() for s in comm_de]
 comm_en = io.fetch(root, 'ceng')
-comm_en_upper = [s.upper() for s in comm_en]
+
 print("Command lists read.\n")
 
 print("German Commands:"+str(comm_de))
 print("English Commands:"+str(comm_en))
 
-
-#read in questions
-q_de = io.fetch(root, 'qde')
-q_en = io.fetch(root, 'qeng')
-print("Questions read.\n")
+#generate uppercase commands from lists
+comm_de_upper = [s.upper() for s in comm_de]
+comm_en_upper = [s.upper() for s in comm_en]
 
 
-#read in answers
-a_de = io.fetch(root, 'ade')
-a_en = io.fetch(root, 'aeng')
-print("Answers read.\n")
+#read in questions and parse the text (formating and replacing)
+q_de = io.fetchTXT(root, 'qde')
+q_en = io.fetchTXT(root, 'qeng')
+print("Questions read and processed.\n")
 
 
-#replace instances of faqchannel in text with the channel id
-a_de = io.process(a_de, "#faqchannel", faqchannel)
-a_en = io.process(a_en, "#faqchannel", faqchannel)
-print("Answers processed.\n")
+#read in answers and parse the text (formating and replacing)
+a_de = io.fetchTXT(root, 'ade')
+a_en = io.fetchTXT(root, 'aeng')
+print("Answers read and processed.\n")
+
 
 #read a user list for voting
 ul = io.getUserList(filepath)
@@ -80,11 +79,9 @@ print("Userlist read.\n")
 
 print('------\n')
 
-
 #generating strings for help commands
 help_de = pu.gString(comm_de)
 help_en = pu.gString(comm_en)
-
 
 #open the token file and mirn counter
 TOKEN = io.getToken(filepath)
