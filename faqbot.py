@@ -168,12 +168,10 @@ async def shutdown(ctx):
 @bot.command(name="help")
 async def help(ctx):
     if ctx.prefix == "f!":
-        embed = dcf.helpDE(help_de)
-        await ctx.send(" ", embed=embed)
+        await sendEmbed(ctx.message.channel, dcf.helpDE(help_de))
         return
     elif ctx.prefix == "fe!":
-        embed = dcf.helpEN(help_en)
-        await ctx.send(" ", embed=embed)
+        await sendEmbed(ctx.message.channel, dcf.helpEN(help_en))
         return
 
 @bot.command(name="remaining")
@@ -230,14 +228,15 @@ async def aq(ctx, arg1):
             print(str(ctx.message.author)+ " used an unknown command (" +str(ctx.message.content)+")")
             return
 
+#check how many mirns were posted in the welcome
 @bot.command(name="mirn")
-async def minn(ctx):
+async def mirnn(ctx):
     if ctx.prefix == "d!":
         embed = discord.Embed(color=dhorange)
         dcf.addEmbed(embed, "Mirns im Welcome: ", mc)
         await ctx.message.channel.send(" ", embed=embed)  
 
-
+#set a channel for the bot to communicate in 
 @bot.command(name="setchannel")
 async def setchannel(ctx, arg):
     if ctx.prefix == "d!":
@@ -278,23 +277,6 @@ async def mirnupdate(ctx):
                     print(str(mc), end="\r")
             print("Total Number of Mirns: "+str(mc))
             io.writeVal(filepath, 'mirn.dcbt', mc)
-        else:
-            await ctx.message.channel.send(authfailed)
-            print(str(ctx.message.author) + " tried to access admin restricted command d!mupdate!")
-
-@bot.command(name="vupdate")
-async def voteupdate(ctx):
-    if ctx.prefix == "d!":
-        if ctx.message.author.id == ADMIN:
-            vc = []
-            chann = bot.get_channel(137246928227270656)
-            async for message in chann.history(limit=99999999999999999999):
-                msg = message.content
-                if msg == "d!onnerstag":
-                    vc.append(message.author.id)
-                    print(len(vc), end="\r")
-            print("Total Number of Votes: "+str(mc))
-            io.writeUserList(filepath, vc)
         else:
             await ctx.message.channel.send(authfailed)
             print(str(ctx.message.author) + " tried to access admin restricted command d!mupdate!")
