@@ -116,7 +116,8 @@ async def DownTime():
     async for message in internal.history(limit=50):                #find last message by bot (restarting, etc)
         if message.author == bot.user:                              
             timeObject1 = message.created_at                        #create time object of last message
-        await internal.send("Bot Online")
+            break
+    await internal.send("Bot Online")
     async for message in internal.history(limit=1):                 #create time object of newest bot message (Online)
         timeObject2 = message.created_at
     downtime = pu.dateProcess(timeObject2, timeObject1)             #calculate time difference in minutes
