@@ -107,7 +107,7 @@ async def GameChanger():
 
 #check for restart commands
 async def StateCheck():
-    await internal.send("")
+    await internal.send("Bot Online")
     #check internal
     print("StateCheck on Internal")
     async for message in internal.history(limit=50):
