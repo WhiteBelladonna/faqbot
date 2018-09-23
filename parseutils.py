@@ -1,4 +1,5 @@
 import datetime
+from datetime import timedelta
 
 #function to remove any leetspeak from command strings (anti troll measure)
 def unLeet(strIn):
@@ -68,7 +69,13 @@ def createDate(dtobj):
     return string
 
 def dateProcess(dtobj):
-    ph = (datetime.datetime.now()-dtobj).total_seconds()
-    ph = str(ph/60)
+    ph = (datetime.datetime.now()-dtobj)
+    ph = ph / timedelta(minutes=1)
+    ph = str(ph)
     ph = ph[4:] + " minutes"
     return ph
+
+def faqParse(arg):
+    arg = str(arg)
+    arg = parseTXT(arg)
+    return arg
