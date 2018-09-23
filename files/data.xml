@@ -1,9 +1,5 @@
 <commandlist>
 <command>
-    <cde>f!help</cde>
-    <ceng>fe!help</ceng>
-</command>
-<command>
     <cde>Kühlschrank</cde>
     <qde>Darf ich einen Kühlschrank mitbringen?</qde>
     <ade>Nein, das Mitbringen von Kühlschränken ist __nicht__ gestattet!</ade>

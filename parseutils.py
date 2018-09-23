@@ -44,7 +44,6 @@ def checkCommN(commlist, comm):
 
 #new function that generates that string
 def gString(lst):
-    a = lst.pop(0)
     string = ' | '.join(lst)
     return string
 
