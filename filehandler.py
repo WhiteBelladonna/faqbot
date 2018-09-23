@@ -15,7 +15,7 @@ def fetch(root, name):
         if ph is None or ph.text is None:
             lst.append(" ")
         else:
-            lst.append(ph)        
+            lst.append(ph.text)        
     return lst
 
 def fetchTXT(root, name):
