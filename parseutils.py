@@ -16,9 +16,17 @@ def unLeet(strIn):
     txt = txt.replace("@","a")
     return txt
 
+#function to format the embed text
 def embFormat(strIn):
     txt = strIn
     txt = txt.replace("\\n","\n \u200B")
+    return txt
+
+#function to parse a faq message
+def faqParse(arg1):
+    txt = str(arg1)
+    txt = unLeet(txt)
+    txt = txt.upper()
     return txt
 
 def cparse(tx):
@@ -76,13 +84,10 @@ def createDate(dtobj):
     return string
 
 def dateProcess(dtobj, dtobj2):
-    ph = (dtobj2-dtobj).seconds
-    ph = ph / 60
+    ph = (dtobj2-dtobj)
+    ph = ph.seconds
+    ph = ph/60
     ph = str(ph)
     ph = ph[:4] + " minutes"
     return ph
 
-def faqParse(arg):
-    arg = str(arg)
-    arg = parseTXT(arg)
-    return arg

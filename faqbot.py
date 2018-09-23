@@ -214,24 +214,22 @@ async def aq(ctx, arg1):
     if ctx.prefix == "f!":                                              #check for german prefix
         gmsg = pu.faqParse(arg1)                                        #parse the message (unleet, upper, fancy stuff)
         ph = pu.checkCommN(comm_de_upper, gmsg)                         #check for existing command
-        if ph is not False:                                             #generate and send a reply to the faq commend
-            sendEmbed(ctx.message.channel, dcf.FAQ(q_de[ph], a_de[ph], dhorange))            
+        if ph is not False:                                             #generate and send a reply to the faq command
+            await sendEmbed(ctx.message.channel, dcf.FAQ(q_de[ph], a_de[ph], dhorange))            
             return
-        else:                                                           #generate and send a help embed if the comment is not found
+        else:                                                           #generate and send a help embed if the command is not found
             await ctx.send(unknown_de, embed=dcf.helpDE(help_de))
             print(str(ctx.message.author)+ " used an unknown command (" +str(ctx.message.content)+")")
             return
 
-    if ctx.prefix == "fe!":
-        emsg = pu.faqParse(arg1)
-        ph = pu.checkCommN(comm_en_upper, emsg)
-        if ph is not False:
-            embed = dcf.FAQENG(q_en[ph], a_en[ph], dhorange)
-            await ctx.send(" ",embed=embed)
+    if ctx.prefix == "fe!":                                             #check for english prefix
+        emsg = pu.faqParse(arg1)                                        #parse the message (unleet, upper, etc)
+        ph = pu.checkCommN(comm_en_upper, emsg)                         #check for existing command
+        if ph is not False:                                             #generate and send a reply to the faq command
+            await sendEmbed(ctx.message.channel, dcf.FAQENG(q_en[ph], a_en[ph], dhorange))
             return
-        else:
-            embed = dcf.helpEN(help_en)
-            await ctx.send(unknown_en, embed=embed)
+        else:                                                           #generate and send a help embed if the command is not found
+            await ctx.send(unknown_en, embed=dcf.helpEN(help_en))
             print(str(ctx.message.author)+ " used an unknown command (" +str(ctx.message.content)+")")
             return
 
