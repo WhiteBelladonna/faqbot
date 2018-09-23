@@ -90,6 +90,6 @@ def dateProcess(dtobj, dtobj2):
     ph2 = ph/60
     ph = str(ph)
     ph2 = str(ph2)
-    ph = ph[:4] + " minutes (" + ph2 + " seconds)"
+    ph = ph2[:4] + " minutes (" + ph + " seconds)"
     return ph
 
