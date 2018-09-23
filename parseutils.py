@@ -79,7 +79,7 @@ def dateProcess(dtobj, dtobj2):
     ph = (dtobj2-dtobj).seconds
     ph = ph / 60
     ph = str(ph)
-    ph = ph[4:] + " minutes"
+    ph = ph[:4] + " minutes"
     return ph
 
 def faqParse(arg):
