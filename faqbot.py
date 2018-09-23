@@ -104,28 +104,24 @@ def fetchServer(id):
 #define the status message of the bot
 async def GameChanger():
     await bot.change_presence(game=discord.Game(name="f!help | fe!help"))
+    return
 
-#check for restart commands
-async def StateCheck():
-    await internal.send("Bot Online")
-    #check internal
-    print("StateCheck on Internal")
-    async for message in internal.history(limit=50):
-        if message.content == "d!restart":
-            print("Found Restart Command")
-            dt = pu.dateProcess(message.created_at)
-            await internal.send("Bot restarted. Downtime: " + dt)
-            return
-        elif message.content == "d!update":
-            print("Found Update Command")
-            dt = pu.dateProcess(message.created_at)
-            await internal.send("Bot restarted and updated. Downtime: " + dt)
-            return
-        elif message.content == "d!shutdown":
-            print("Found Shutdown Command")
-            dt = pu.dateProcess(message.created_at)
-            await internal.send("Bot online after Shutdown. Downtime: " + dt)
-            return
+#sends an embed message
+async def sendEmbed(channelObject, embedObject):
+    await channelObject.send(" ", embed=embedObject)
+    return
+
+#downtime Check
+async def DownTime():
+    async for message in internal.history(limit=50):                #find last message by bot (restarting, etc)
+        if message.author == bot.user:                              
+            timeObject1 = message.created_at                        #create time object of last message
+        await internal.send("Bot Online")
+    async for message in internal.history(limit=1):                 #create time object of newest bot message (Online)
+        timeObject2 = message.created_at
+    downtime = pu.dateProcess(timeObject2, timeObject1)             #calculate time difference in minutes
+    await internal.send("Downtime: " + downtime)                    #send time difference
+    return
 
 @bot.command(name="restart")
 async def restart(ctx):
@@ -146,13 +142,13 @@ async def restart(ctx):
 async def update(ctx):
     if ctx.prefix == "d!":
         if ctx.author.id == ADMIN:
-           await ctx.message.channel.send("Restarting...")
+           await ctx.message.channel.send("Updating...")
            subprocess.Popen([sys.executable, "./update.py"])
            await bot.close()
            return
         for i in range(len(ctx.author.roles)):
              if ctx.author.roles[i] == admin:
-                await ctx.message.channel.send("Restarting...")
+                await ctx.message.channel.send("Updating...")
                 subprocess.Popen([sys.executable, "./update.py"])
                 await bot.close()
                 return
@@ -214,16 +210,14 @@ async def aber(ctx):
 #FAQ Command
 @bot.command(name="aq")
 async def aq(ctx, arg1):
-    if ctx.prefix == "f!":                          #check for german prefix
-        gmsg = pu.faqParse(arg1)                    #parse the message (unleet, upper, fancy stuff)
-        ph = pu.checkCommN(comm_de_upper, gmsg)     #check for existing command
-        if ph is not False:
-            embed = dcf.FAQ(q_de[ph], a_de[ph], dhorange)
-            await ctx.send(" ", embed=embed)
+    if ctx.prefix == "f!":                                              #check for german prefix
+        gmsg = pu.faqParse(arg1)                                        #parse the message (unleet, upper, fancy stuff)
+        ph = pu.checkCommN(comm_de_upper, gmsg)                         #check for existing command
+        if ph is not False:                                             #generate and send a reply to the faq commend
+            sendEmbed(ctx.message.channel, dcf.FAQ(q_de[ph], a_de[ph], dhorange))            
             return
-        else:
-            embed = dcf.helpDE(help_de)
-            await ctx.send(unknown_de, embed=embed)
+        else:                                                           #generate and send a help embed if the comment is not found
+            await ctx.send(unknown_de, embed=dcf.helpDE(help_de))
             print(str(ctx.message.author)+ " used an unknown command (" +str(ctx.message.content)+")")
             return
 
@@ -386,6 +380,6 @@ async def on_ready():
     faqmsgchan = bot.get_channel(faqcid)
     internal = bot.get_channel(intid)
     faqdm = dcf.fetchUser(dhserv, faquid)
-    await StateCheck()
+    await DownTime()
 
 bot.run(TOKEN, bot=True, reconnect=True)

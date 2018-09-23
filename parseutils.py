@@ -1,18 +1,25 @@
 import datetime
 from datetime import timedelta
 
-#function to remove any leetspeak from command strings (anti troll measure)
+#functions to parse text and time.
+
+#function to replace leetspeak with proper text
 def unLeet(strIn):
-    ph = strIn
-    ph = ph.replace("!","i")
-    ph = ph.replace("1","i")
-    ph = ph.replace("$","s")
-    ph = ph.replace("5","s")
-    ph = ph.replace("7","t")
-    ph = ph.replace("4","a")
-    ph = ph.replace("3","e")
-    ph = ph.replace("@","a")
-    return ph
+    txt = strIn
+    txt = txt.replace("!","i")
+    txt = txt.replace("1","i")
+    txt = txt.replace("$","s")
+    txt = txt.replace("5","s")
+    txt = txt.replace("7","t")
+    txt = txt.replace("4","a")
+    txt = txt.replace("3","e")
+    txt = txt.replace("@","a")
+    return txt
+
+def embFormat(strIn):
+    txt = strIn
+    txt = txt.replace("\\n","\n \u200B")
+    return txt
 
 def cparse(tx):
     tx = tx.replace("\\n","\n \u200B")
@@ -68,8 +75,8 @@ def createDate(dtobj):
     string = string + parseNum(int(dtobj.minute))
     return string
 
-def dateProcess(dtobj):
-    ph = (datetime.datetime.now()-dtobj)
+def dateProcess(dtobj, dtobj2):
+    ph = (dtobj2-dtobj)
     ph = ph / timedelta(minutes=1)
     ph = str(ph)
     ph = ph[4:] + " minutes"
