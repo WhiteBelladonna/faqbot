@@ -349,7 +349,11 @@ async def on_message(message):
             await message.add_reaction(mirn)
         elif rnd < mirnchance:
             await message.add_reaction(mirn)
-        return    
+        return   
+    elif msg[:4] == "MOIN":
+        msg.channel.send("Meinten sie: __mirn__?")
+    elif msg[:4] == "MIRGEN":
+        msg.channel.send("Meinten sie: __mirn__?") 
                
 #this is executed on startup
 @bot.event
