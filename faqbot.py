@@ -352,8 +352,10 @@ async def on_message(message):
         return   
     elif msg[:4] == "MOIN":
         msg.channel.send("Meinten sie: __mirn__?")
-    elif msg[:4] == "MIRGEN":
-        msg.channel.send("Meinten sie: __mirn__?") 
+        return
+    elif msg[:6] == "MORGEN":
+        msg.channel.send("Meinten sie: __mirgen__?")
+        return
                
 #this is executed on startup
 @bot.event
