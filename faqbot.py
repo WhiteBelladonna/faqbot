@@ -158,7 +158,8 @@ async def ban(ctx):
     if ctx.prefix == "d!":
         if ctx.author.id == ADMIN:
            banid = dcf.fetchUser(dhserv, ctx)
-           await banid.ban(banid, 0)
+           await banid.ban(banid, reason=None, delete_message_days=0)
+           await ctx.message.channel.send(str(banid) + " was banned from the server.")
            return
 
 #define the different commands
