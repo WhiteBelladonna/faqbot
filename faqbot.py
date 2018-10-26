@@ -350,10 +350,10 @@ async def on_message(message):
         elif rnd < mirnchance:
             await message.add_reaction(mirn)
         return   
-    elif msg[:4] == "MOIN":
+    if msg[:4] == "MOIN":
         message.channel.send("Meinten sie: __mirn__?")
         return
-    elif msg[:6] == "MORGEN":
+    if msg[:6] == "MORGEN":
         message.channel.send("Meinten sie: __mirgen__?")
         return
                
