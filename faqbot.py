@@ -351,10 +351,10 @@ async def on_message(message):
             await message.add_reaction(mirn)
         return   
     elif msg[:4] == "MOIN":
-        msg.channel.send("Meinten sie: __mirn__?")
+        message.channel.send("Meinten sie: __mirn__?")
         return
     elif msg[:6] == "MORGEN":
-        msg.channel.send("Meinten sie: __mirgen__?")
+        message.channel.send("Meinten sie: __mirgen__?")
         return
                
 #this is executed on startup
