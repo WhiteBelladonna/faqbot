@@ -352,11 +352,11 @@ async def on_message(message):
         return   
     if msg[:4] == "MOIN":
         print(str(message.author) + " said moin! OH NO!")
-        message.channel.send("Meinten sie: __mirn__?")
+        await message.channel.send("Meinten sie: __mirn__?")
         return
     if msg[:6] == "MORGEN":
         print(str(message.author) + " said morgen! OH NO!")
-        message.channel.send("Meinten sie: __mirgen__?")
+        await message.channel.send("Meinten sie: __mirgen__?")
         return
                
 #this is executed on startup
