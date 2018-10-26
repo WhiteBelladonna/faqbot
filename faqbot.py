@@ -35,6 +35,7 @@ mirnchance = 40
 msgchan = 137246928227270656
 faqcid = 484264883169525760
 intid = 183158280216903680
+randomuid = 214832573392748544
 
 #initialize users and emoji
 mirn = None
@@ -46,6 +47,7 @@ faqmsgchan = None
 messagechannel = None
 dhserv = None
 internal = None
+
 
 #read faq commands
 comm_de = io.fetch(root, 'cde')
@@ -335,7 +337,9 @@ async def on_message(message):
         io.writeVal(filepath, 'mirn.dcbt', mc)
         rnd = random.randint(1,100)
         print(str(message.author) + " rolled: " + str(rnd))
-        if rnd < mirnchance:
+        if message.author.id == randomuid:
+            await message.add_reaction(mirn)
+        elif rnd < mirnchance:
             await message.add_reaction(mirn)
         return    
                
