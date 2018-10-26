@@ -153,6 +153,13 @@ async def update(ctx):
                 await bot.close()
                 return
 
+@bot.command(name="ban")
+async def ban(ctx):
+    if ctx.prefix == "d!":
+        if ctx.author.id == ADMIN:
+           banid = dcf.fetchUser(dhserv, ctx)
+           await banid.ban(banid, 0)
+           return
 
 #define the different commands
 @bot.command(name="shutdown")
