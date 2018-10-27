@@ -335,6 +335,13 @@ async def on_message(message):
     
     await bot.process_commands(message)
 
+    if msg == "\\o\\":
+        await message.channel.send("/o/")
+        return
+    if msg == "/o/":
+        await message.channel.send("\\o\\")
+        return
+
     #mirn v2
     msg = message.content
     str(msg[:6])
@@ -358,15 +365,10 @@ async def on_message(message):
         print(str(message.author) + " said morgen! OH NO!")
         await message.channel.send("Meinten sie: __mirgen__?")
         return
-    if msg == "\\o\\":
-        await message.channel.send("/o/")
-        return
-    if msg == "/o/":
-        await message.channel.send("\\o\\")
-        return
-    if msg == "marco":
+    if msg == "MARCO":
         await message.channel.send("polo")
         return
+        
 #this is executed on startup
 @bot.event
 async def on_ready():
