@@ -48,6 +48,10 @@ messagechannel = None
 dhserv = None
 internal = None
 
+#antispam variable
+last = 0
+spamdelay = 20
+
 
 #read faq commands
 comm_de = io.fetch(root, 'cde')
@@ -330,6 +334,7 @@ async def checkvote(ctx):
 # message sending and stuff
 @bot.event
 async def on_message(message):
+    global last, spamdelay
     if message.author == bot.user:
         return
     
@@ -351,13 +356,17 @@ async def on_message(message):
             await message.add_reaction(mirn)
         return   
     if msg[:4] == "MOIN":
-        print(str(message.author) + " said moin! OH NO!")
-        await message.channel.send("Meinten sie: __mirn__?")
-        return
+        if (datetime.datetime.now()-last).seconds > spamdelay:
+            print(str(message.author) + " said moin! OH NO!")
+            await message.channel.send("Meinten sie: __mirn__?")
+            last = datetime.datetime.now()
+            return
     if msg[:6] == "MORGEN":
-        print(str(message.author) + " said morgen! OH NO!")
-        await message.channel.send("Meinten sie: __mirgen__?")
-        return
+        if (datetime.datetime.now()-last).seconds > spamdelay:
+            print(str(message.author) + " said morgen! OH NO!")
+            await message.channel.send("Meinten sie: __mirgen__?")
+            last = datetime.datetime.now()
+            return
         
 #this is executed on startup
 @bot.event
