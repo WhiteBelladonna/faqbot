@@ -49,7 +49,7 @@ dhserv = None
 internal = None
 
 #antispam variable
-last = 0
+last = datetime.datetime.now()
 spamdelay = 20
 
 
