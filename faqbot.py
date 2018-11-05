@@ -224,7 +224,9 @@ async def embed(ctx):
         if ctx.author.id == ADMIN:
             global msgchan
             embed = discord.Embed(color=dhorange)
-            embed.add_field(name="...", value = str(ctx.message.content))
+            message = str(ctx.message.content)
+            message = message[7:]
+            embed.add_field(name="...", value = message)
             await msgchan.send("", embed=embed)
             return
         else:
