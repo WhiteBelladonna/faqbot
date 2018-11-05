@@ -31,11 +31,11 @@ authfailed = "I\'m sorry Dave, I\'m afraid I can\'t do that."
 unknown_de = "Den Befehl kenne ich leider nicht. Schau doch mal in meiner Befehlsübersicht nach:"
 unknown_en = "I don't recognize that command. Try checking my commandlist:"
 mirnemoji = "DHCactus"
-mirnchance = 40
+mirnchance = 42
 msgchan = 137246928227270656
 faqcid = 484264883169525760
 intid = 183158280216903680
-randomuid = 214832573392748544
+randomuid = 214832573392748544 
 
 #initialize users and emoji
 mirn = None
@@ -47,6 +47,7 @@ faqmsgchan = None
 messagechannel = None
 dhserv = None
 internal = None
+membed = None
 
 #antispam variable
 last = datetime.datetime.now()
@@ -216,6 +217,20 @@ async def aber(ctx):
                 await ctx.message.channel.send(authfailed)
                 print(ctx.message.author + " tried to access command d!aber!")
                 return
+
+@bot.command(name="embed")
+async def embed(ctx):
+    if ctx.prefix == "d!":
+        if ctx.author.id == ADMIN:
+            global msgchan
+            embed = discord.Embed(color=dhorange)
+            embed.add_field(name="...", value = str(ctx.message.content))
+            await msgchan.send("", embed=embed)
+            return
+        else:
+            await ctx.message.channel.send(authfailed)
+            print(ctx.message.author + " tried to access command d!embed!")
+            return
 
 #FAQ Command
 @bot.command(name="aq")
