@@ -111,7 +111,7 @@
     <ade>Ausgangsbasis: du bist Clanleader und hast schon feierlich für deine Mitspieler bestellt. Mit den Daten deiner Bestellung (Spielername, Mailadresse, Bestellnummer) und der Bestellung des Hinzuzufügenden wendest du dich dann vertrauensvoll an die Verwalterin des LAN-Shops (congressregistration@leipziger-messe.de).</ade>
     <ceng>clan</ceng>
     <qeng>How do I add another member to my clan?</qeng>
-    <aeng>Requirement: You are leader of your clan and already ordered tickets for your teammates. With your order details (player name, 
+    <aeng>Requirement: You are leader of your clan and already ordered tickets for your teammates. With your order details (player name, email address, order number) and the order details of the person you want to add to your clan, contact the administrator of the [LAN-Shop](mailto://congressregistration@leipziger-messe.de).</aeng>
 </command>
 <command>
     <cde>Zutritt</cde>
@@ -168,6 +168,6 @@
     <ade>Dann schau bitte auch noch mal (mit der Suchfunktion deines Browsers :-) im [LAN-Forum](https://forum.dreamhack-leipzig.de/t/dreamhack-leipzig-lan-faq-2019/2330#lan) vorbei. Dort gibt es weitere gestammelte Werke.</ade>
     <ceng>Question</ceng>
     <qeng>My question wasn't answered :-(</qeng>
-    <ade>While our [LAN Forum](https://forum.dreamhack-leipzig.de/t/dreamhack-leipzig-lan-faq-2019/2330#lan) is in German, you can always ask one of the admins or members of this discord server to help you out with your questions.</ade>
+    <aeng>While our [LAN Forum](https://forum.dreamhack-leipzig.de/t/dreamhack-leipzig-lan-faq-2019/2330#lan) is in German, you can always ask one of the admins or members of this discord server to help you out with your questions.</aeng>
 </command>
 </commandlist>
