@@ -93,34 +93,49 @@
     <cde>Tisch</cde>
     <qde>Wie groß ist mein Tisch?</qde>
     <ade>Der Bereich eines LAN-Seat / LAN-Seat+ ist 85 x 80 cm (BxT)\nDer Bereich eines LAN-Seat XMG hat die doppelte Breite [what?](https://www.google.de/search?q=taschenrechner)</ade>
+    <ceng>table</ceng>
+    <qeng>What size is my table?</qeng>
+    <aeng>For a LAN-Seat / LAN-Seat+, your table size is 85 x 80 cm (WxD)\nThe table space for LAN-Seat XMG is double the width [what?](https://www.google.com/search?q=calculator)</aeng>
 </command>
 <command>
     <cde>Anreise</cde>
     <qde>Wo muss ich lang?</qde>
     <ade>Informationen zur Anreise findest du auf der [DreamHack Leipzig Website](http://www.dreamhack-leipzig.de/de/info/anreise-und-unterkunft/anreise/) oder startest mit der wundervollen [Google Karte zur Orientierung](https://www.google.com/maps/d/viewer?mid=1FK4KMbrLVpnNLsmEWLmhBdkgi2B1S5-m&amp;usp=sharing)</ade>
+    <ceng>arrival</ceng>
+    <qeng>Where do I go?</qeng>
+    <aeng>You can find useful travel information on the [DreamHack Leipzig website](http://www.dreamhack-leipzig.de/en/info/arrival-and-accommodation/anreise/) or start with this wonderful [Google map](https://www.google.com/maps/d/viewer?mid=1FK4KMbrLVpnNLsmEWLmhBdkgi2B1S5-m&amp;usp=sharing)</aeng>
 </command>
 <command>
     <cde>Clan</cde>
     <qde>Wie kann ich einen weiteren Mitspieler meinem Clan hinzufügen?</qde>
     <ade>Ausgangsbasis: du bist Clanleader und hast schon feierlich für deine Mitspieler bestellt. Mit den Daten deiner Bestellung (Spielername, Mailadresse, Bestellnummer) und der Bestellung des Hinzuzufügenden wendest du dich dann vertrauensvoll an die Verwalterin des LAN-Shops (congressregistration@leipziger-messe.de).</ade>
+    <ceng>clan</ceng>
+    <qeng>How do I add another member to my clan?</qeng>
+    <aeng>Requirement: You are leader of your clan and already ordered tickets for your teammates. With your order details (player name, 
 </command>
 <command>
     <cde>Zutritt</cde>
     <qde>Kann man die Halle betreten und verlassen wie man möchte?</qde>
     <ade>Nein! \nAber folge den ausgewiesenen Wegen und Anweisungen der Security und du kannst zwischen dem 15.2.2019, 8:00 Uhr und 17.2.2019, 17:00 Uhr die LAN-Halle (Halle 5) bequem betreten und verlassen so oft du willst :-)</ade>
+    <ceng>access/ceng>
+    <qeng>Can I enter and exit the hall whenenver I want?</qeng>
+    <aeng>No! \nBut if you use the official entrances and exits and listen to the security staff's instructions, you can enter and exit the LAN Hall (Hall 5) between 15.2.2019, 8:00am and 17.2.2019, 5:00pm as often as you want. :-)</aeng>
 </command>
 <command>
     <cde>Küchengeräte</cde>
-    <qde>Was ist mit weiteren Küchengeräten? Sandwichtoaster? Slushimaschine? Thermomix? Vollbackautomat?</qde>
+    <qde>Was ist mit weiteren Küchengeräten? Sandwichtoaster? Slushimaschine? Thermomix? Backöfen?</qde>
     <ade>NEIN! Bitte nicht ... </ade>
+    <ceng>appliances</ceng>
+    <qeng>How about other kitchen appliances? Sandwich toasters? Slushie makers? Thermomix? Ovens?</qeng>
+    <aeng>NO! Please don't ... </aeng>
 </command>
 <command>
     <cde>Turnieranmeldung</cde>
     <qde>Wer was wann wie wo mit der Turnieranmeldung?</qde>
     <ade>- Die Turniere zur DreamHack Leipzig LAN 2019 werden gerade noch ausgetüftelt und zugelost. Infos folgen!\n - Für eine erfolgreiche Anmeldung / Registrierung zu einem Turnier ist ein verifizierter Forenaccount notwendig \n- dafür ist deine Zustimmung zur Datenweiterverarbeitung im Ticketshop nötig (beim Kauf bzw. beim Setzen klickbar) \n- über die weiteren Schritte halten wir auf dem Laufenden :-) </ade>
-    <ceng></ceng>
-    <qeng></qeng>
-    <aeng></aeng>
+    <ceng>tournamentreg</ceng>
+    <qeng>What about the Tournament registration?</qeng>
+    <aeng>The tournaments for DreamHack Leipzig LAN 2019 are still being figured out. More information will follow soon!\n - For a successful registration to a tournament, a verified Dreamhack Forum account is required \n- which needs your consent for data transfer in the ticket shop (can be clicked during ticket purchase or seating) \n- we will keep you informed about further steps :-)</aeng>
     <keywords>Turnier</keywords>
 </command>
 <!--<command>
@@ -151,5 +166,8 @@
     <cde>Frage</cde>
     <qde>Meine Frage ist nicht beantwortet :-(</qde>
     <ade>Dann schau bitte auch noch mal (mit der Suchfunktion deines Browsers :-) im [LAN-Forum](https://forum.dreamhack-leipzig.de/t/dreamhack-leipzig-lan-faq-2019/2330#lan) vorbei. Dort gibt es weitere gestammelte Werke.</ade>
+    <ceng>Question</ceng>
+    <qeng>My question wasn't answered :-(</qeng>
+    <ade>While our [LAN Forum](https://forum.dreamhack-leipzig.de/t/dreamhack-leipzig-lan-faq-2019/2330#lan) is in german, you can always ask one of the admins or members of this discord server to help you out with your questions.</ade>
 </command>
 </commandlist>
