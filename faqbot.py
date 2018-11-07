@@ -7,6 +7,7 @@ import scraper as sc
 import datetime
 import subprocess
 import sys
+import languageki as ki
 
 import time
 import random
@@ -51,8 +52,19 @@ membed = None
 
 #antispam variable
 last = datetime.datetime.now()
+lastauto = datetime.datetime.now()
 spamdelay = 20
+autodelay = 30
 
+qreply = [
+    "",
+    "Sitzplatzreservierung? Mitte Dezember!",
+    "Da schauste am besten mal mit f!aq Pavilion nach.",
+    "Für die Turniere ist grad noch nix genaues bekannt, aber vielleicht kommt ja bald was!",
+    "Nee ... Lass die mal zu Hause ...",
+    "Wir reden hier nicht von dir...",
+    "Draußen ist doch im Februar kalt genug ..."
+]
 
 #read faq commands
 comm_de = io.fetch(root, 'cde')
@@ -351,7 +363,7 @@ async def checkvote(ctx):
 # message sending and stuff
 @bot.event
 async def on_message(message):
-    global last, spamdelay
+    global last, spamdelay, qreply, autodelay, lastauto
     if message.author == bot.user:
         return
     
@@ -384,6 +396,15 @@ async def on_message(message):
             await message.channel.send("Meinten sie: __mirgen__?")
             last = datetime.datetime.now()
             return
+    
+    qperc, topic, topicid = ki.process(str(message.content))
+    if qperc >= 20:
+        if topicid > 0:
+            if (datetime.datetime.now()-lastauto).seconds > autodelay:
+                await message.channel.send(qreply[topicid])
+                lastauto = datetime.datetime.now()
+                print(str(message.author) + " asked a question about: " + str(topic))
+                return
         
 #this is executed on startup
 @bot.event
