@@ -14,7 +14,7 @@ topics = ["Nicht Erkannt","Platzreservierung","Pavillon","Turniere", "Zapfanlage
 
 
 def process(message):
-    qweight = 100
+    qweight = 2
     qscore = 0
     qperc = 0.0
     if "?" in message:
