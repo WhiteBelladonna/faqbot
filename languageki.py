@@ -7,11 +7,11 @@ keywrd = [
         ],
         [
             ["reservierung", "sitzplatzreservierung", "platzwahl", "seating", "sitzplatz", "sitzplätze", "platzreservierung"],
-            ["wann", "beginnt", "eigentlich", "geht", "datum"]
+            ["wann", "beginnt", "eigentlich", "geht", "datum", "los", "startet"]
         ],
         [
             ["pavillon", "pavillion", "zelt", "überdachung"],
-            ["mitbringen","mitnehmen","aufbauen", "darf", "eigentlich", "wie"]
+            ["mitbringen","mitnehmen","aufbauen", "darf", "eigentlich", "wie", "sind", "erlaubt"]
         ],
         [
             ["turnier", "turniere", "turnieren"],
@@ -19,7 +19,7 @@ keywrd = [
         ],
         [
             ["zapfanlage", "zapfanlagen"],
-            ["mitbringen","mitnehmen","aufbauen", "darf", "eigentlich", "was"]
+            ["mitbringen","mitnehmen","aufbauen", "darf", "eigentlich", "was", "sind", "erlaubt"]
         ],
         [
             ["behindert", "dumm", "bescheuert"],
@@ -27,7 +27,7 @@ keywrd = [
         ],
         [
             ["kühlschrank", "kühlschränke"],
-            ["mitbringen", "platz", "darf", "eigentlich", "wie"]
+            ["mitbringen", "platz", "darf", "eigentlich", "wie", "sind", "erlaubt", "zugelassen"]
         ]
     ]
 

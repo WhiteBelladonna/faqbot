@@ -63,7 +63,7 @@ qreply = [
     "Für die Turniere ist grad noch nix genaues bekannt, aber vielleicht kommt ja bald was!",
     "Nee ... Lass die mal zu Hause ...",
     "Wir reden hier nicht von dir...",
-    "Draußen ist doch im Februar kalt genug ..."
+    "Nein, Kühlschränke sind nicht erlaubt. Draußen ist doch im Februar kalt genug ..."
 ]
 
 #read faq commands
