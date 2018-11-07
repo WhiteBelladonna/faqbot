@@ -398,7 +398,7 @@ async def on_message(message):
             return
     
     qperc, topic, topicid = ki.process(str(message.content))
-    if qperc >= 20:
+    if qperc >= 23:
         if topicid > 0:
             if (datetime.datetime.now()-lastauto).seconds > autodelay:
                 await message.channel.send(qreply[topicid])

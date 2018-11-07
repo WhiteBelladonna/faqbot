@@ -24,6 +24,7 @@ def process(message):
     qscore = qscore + isQuestion(keywords)
     qperc = (qscore / len(keywords)) * 100
     qperc = float("{0:.2f}".format(qperc))
+    print(qperc)
     if qperc > 100:
         qperc = 100
     topic, topicid = findTopic(keywords)
