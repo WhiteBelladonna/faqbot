@@ -1,52 +1,59 @@
 from fuzzywuzzy import fuzz
 
 keywrd = [
-        [],
-        ["reservierung", "sitzplatzreservierung", "platzwahl", "seating", "sitzplatz", "sitzplätze", "platzreservierung"],
-        ["pavillon", "pavillion", "zelt", "überdachung"],
-        ["turnier", "turniere", "turnieren"],
-        ["zapfanlage", "zapfanlagen"],
-        ["behindert", "dumm", "bescheuert"],
-        ["kühlschrank", "kühlschränke"],
+        [
+            ["009009009", "900900900"],
+            ["009009009", "900900900"]
+        ],
+        [
+            ["reservierung", "sitzplatzreservierung", "platzwahl", "seating", "sitzplatz", "sitzplätze", "platzreservierung"],
+            ["wann", "beginnt", "eigentlich", "geht", "datum"]
+        ],
+        [
+            ["pavillon", "pavillion", "zelt", "überdachung"],
+            ["mitbringen","mitnehmen","aufbauen", "darf", "eigentlich", "wie"]
+        ],
+        [
+            ["turnier", "turniere", "turnieren"],
+            ["infos", "spiele", "welche", "was", "gibt"]
+        ],
+        [
+            ["zapfanlage", "zapfanlagen"],
+            ["mitbringen","mitnehmen","aufbauen", "darf", "eigentlich", "was"]
+        ],
+        [
+            ["behindert", "dumm", "bescheuert"],
+            ["bot", "du", "bist"]
+        ],
+        [
+            ["kühlschrank", "kühlschränke"],
+            ["mitbringen", "platz", "darf", "eigentlich", "wie"]
+        ]
     ]
 
 topics = ["Nicht Erkannt","Platzreservierung","Pavillon","Turniere", "Zapfanlage", "Dumm", "Kühlschrank"]
 
-
-def process(message):
-    qweight = 1
-    qscore = 0
-    qperc = 0.0
-    if "?" in message:
-        qscore = qscore + qweight
-    message = message.replace("?", "")
-    keywords = message.split(" ")
-    qscore = qscore + isQuestion(keywords)
-    qperc = (qscore / len(keywords)) * 100
-    qperc = float("{0:.2f}".format(qperc))
-    print(qperc)
-    if qperc > 100:
-        qperc = 100
-    topic, topicid = findTopic(keywords)
-    return qperc, topic, topicid
-
-def isQuestion(splitstring):
-    qscores = ["wer", "wo", "wie", "wann", "warum", "was", "wieso", "weshalb", "eigentlich", "kann", "darf", "erlaubt", "zugelassen", "weiß", "weiss", "schon"]
-    subscore = 0
-    for word in splitstring:
-        for match in qscores:
-            if fuzz.ratio(word.upper(), match.upper()) >= 90:
-                subscore = subscore + 1
-    return subscore
-
-def findTopic(splitstring):
+def nProcess(message):
     global topics
+    message = message.replace("?", "")
+    msgwords = message.split(" ")
+    subscore, topicid = sentenceTree(msgwords)
+    return subscore, topics[topicid], topicid
+
+
+def sentenceTree(wordlist):
     global keywrd
+    subscore = 0
     topic = 0
-    for word in splitstring:
+
+    for word in wordlist:
         for i in range(len(keywrd)):
-            for j in range(len(keywrd[i])):
-                if fuzz.ratio(word.upper(), keywrd[i][j].upper()) >= 80:
+            for j in range(len(keywrd[i][0])):
+                if fuzz.ratio(word.upper(), keywrd[i][0][j].upper()) >= 80:
                     topic = i
                     break
-    return topics[topic], topic
+    for word in wordlist:                
+        for k in range(len(keywrd[topic][1])):
+            if fuzz.ratio(word.upper(), keywrd[topic][1][k].upper()) >= 80:
+                subscore = subscore + 1
+    return subscore, topic

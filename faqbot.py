@@ -54,7 +54,7 @@ membed = None
 last = datetime.datetime.now()
 lastauto = datetime.datetime.now()
 spamdelay = 20
-autodelay = 30
+autodelay = 5
 
 qreply = [
     "",
@@ -397,8 +397,8 @@ async def on_message(message):
             last = datetime.datetime.now()
             return
     
-    qperc, topic, topicid = ki.process(str(message.content))
-    if qperc >= 23:
+    qperc, topic, topicid = ki.nProcess(str(message.content))
+    if qperc >= 2:
         if topicid > 0:
             if (datetime.datetime.now()-lastauto).seconds > autodelay:
                 await message.channel.send(qreply[topicid])
