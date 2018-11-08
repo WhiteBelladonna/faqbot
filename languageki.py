@@ -15,7 +15,7 @@ keywrd = [
         ],
         [
             ["turnier", "turniere", "turnieren"],
-            ["infos", "spiele", "welche", "was", "gibt"]
+            ["infos", "spiele", "welche", "was", "gibt", "wird", "geben", "csgo", "fortnite"]
         ],
         [
             ["zapfanlage", "zapfanlagen"],
