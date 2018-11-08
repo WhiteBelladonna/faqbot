@@ -383,7 +383,17 @@ async def on_message(message):
             await message.add_reaction(mirn)
         elif rnd < mirnchance:
             await message.add_reaction(mirn)
-        return   
+        return
+    
+    qperc, topic, topicid = ki.nProcess(str(message.content))
+    if qperc >= 2:
+        if topicid > 0:
+            if (datetime.datetime.now()-lastauto).seconds > autodelay:
+                await message.channel.send(qreply[topicid])
+                lastauto = datetime.datetime.now()
+                print(str(message.author) + " asked a question about: " + str(topic))
+                return
+    
     if msg[:4] == "MOIN":
         if (datetime.datetime.now()-last).seconds > spamdelay:
             print(str(message.author) + " said moin! OH NO!")
@@ -396,15 +406,6 @@ async def on_message(message):
             await message.channel.send("Meinten sie: __mirgen__?")
             last = datetime.datetime.now()
             return
-    
-    qperc, topic, topicid = ki.nProcess(str(message.content))
-    if qperc >= 2:
-        if topicid > 0:
-            if (datetime.datetime.now()-lastauto).seconds > autodelay:
-                await message.channel.send(qreply[topicid])
-                lastauto = datetime.datetime.now()
-                print(str(message.author) + " asked a question about: " + str(topic))
-                return
         
 #this is executed on startup
 @bot.event
