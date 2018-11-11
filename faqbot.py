@@ -54,7 +54,7 @@ membed = None
 last = datetime.datetime.now()
 lastauto = datetime.datetime.now()
 spamdelay = 20
-autodelay = 5
+autodelay = 30
 
 qreply = [
     "",
