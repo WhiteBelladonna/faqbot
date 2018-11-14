@@ -6,8 +6,8 @@ keywrd = [
             ["009009009", "900900900"]
         ],
         [
-            ["reservierung", "sitzplatzreservierung", "platzwahl", "seating", "sitzplatz", "sitzplätze", "platzreservierung"],
-            ["wann", "beginnt", "eigentlich", "geht", "datum", "los", "startet", "neues", "gibts", "was", "stattfindet"]
+            ["reservierung", "sitzplatzreservierung", "platzwahl", "seating", "sitzplatz", "sitzplätze", "platzreservierung", "platzauswahl", "platzieren"],
+            ["ab", "wann", "beginnt", "eigentlich", "geht", "datum", "los", "startet", "neues", "gibts", "stattfindet", "gibt es", "aussuchen", "auszusuchen"]
         ],
         [
             ["pavillon", "pavillion", "zelt", "überdachung"],
