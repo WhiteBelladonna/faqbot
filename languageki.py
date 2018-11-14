@@ -22,8 +22,8 @@ keywrd = [
             ["mitbringen","mitnehmen","aufbauen", "darf", "eigentlich", "was", "sind", "erlaubt"]
         ],
         [
-            ["behindert", "dumm", "bescheuert"],
-            ["bot", "du", "bist"]
+            ["behindert", "dumm", "bescheuert", "arschloch"],
+            ["bot", "du", "bist", "ist", "eigentlich", "doch"]
         ],
         [
             ["kühlschrank", "kühlschränke"],
