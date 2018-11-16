@@ -5,26 +5,32 @@ keywrd = [
             ["009009009", "900900900"],
             ["009009009", "900900900"]
         ],
+
         [
             ["reservierung", "sitzplatzreservierung", "platzwahl", "seating", "sitzplatz", "sitzplätze", "platzreservierung", "platzauswahl", "platzieren"],
             ["ab", "wann", "beginnt", "eigentlich", "geht", "datum", "los", "startet", "neues", "gibts", "stattfindet", "gibt es", "aussuchen", "auszusuchen"]
         ],
+
         [
             ["pavillon", "pavillion", "zelt", "überdachung"],
             ["mitbringen","mitnehmen","aufbauen", "darf", "eigentlich", "wie", "sind", "erlaubt"]
         ],
+
         [
             ["turnier", "turniere", "turnieren"],
-            ["infos", "spiele", "welche", "was", "gibt", "wird", "geben", "csgo", "fortnite"]
+            ["infos", "spiele", "welche", "was", "gibt", "wird", "geben", "csgo", "fortnite", "counterstrike", "counter strike"]
         ],
+
         [
             ["zapfanlage", "zapfanlagen"],
             ["mitbringen","mitnehmen","aufbauen", "darf", "eigentlich", "was", "sind", "erlaubt"]
         ],
+
         [
             ["behindert", "dumm", "bescheuert", "arschloch"],
             ["bot", "du", "bist", "ist", "eigentlich", "doch"]
         ],
+
         [
             ["kühlschrank", "kühlschränke"],
             ["mitbringen", "platz", "darf", "eigentlich", "wie", "sind", "erlaubt", "zugelassen"]
@@ -49,11 +55,11 @@ def sentenceTree(wordlist):
     for word in wordlist:
         for i in range(len(keywrd)):
             for j in range(len(keywrd[i][0])):
-                if fuzz.ratio(word.upper(), keywrd[i][0][j].upper()) >= 80:
+                if fuzz.ratio(word.upper(), keywrd[i][0][j].upper()) >= 88:
                     topic = i
                     break
     for word in wordlist:                
         for k in range(len(keywrd[topic][1])):
-            if fuzz.ratio(word.upper(), keywrd[topic][1][k].upper()) >= 80:
+            if fuzz.ratio(word.upper(), keywrd[topic][1][k].upper()) >= 88:
                 subscore = subscore + 1
     return subscore, topic
