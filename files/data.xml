@@ -84,7 +84,7 @@
 <command>
     <cde>Turniere</cde>
     <qde>Welche Turniere gibt es?</qde>
-    <ade>Bisher wurden noch keine Turniere bekanntgegeben. Nach Bekanntgabe werden diese hier ergänzt.</ade>
+    <ade>Bisher wurden noch keine Turniere bekanntgegeben. Du kannst aber im [Forum](https://forum.dreamhack-leipzig.de/t/wunschturniere/2401) Für deine Wunschturniere abstimmen.</ade>
     <ceng>tournaments</ceng>
     <qeng>Which tournaments will be held?</qeng>
     <aeng>As of today, no tournaments have been announced yet.</aeng>
@@ -132,7 +132,7 @@
 <command>
     <cde>Turnieranmeldung</cde>
     <qde>Wer was wann wie wo mit der Turnieranmeldung?</qde>
-    <ade>- Die Turniere zur DreamHack Leipzig LAN 2019 werden gerade noch ausgetüftelt und zugelost. Infos folgen!\n - Für eine erfolgreiche Anmeldung / Registrierung zu einem Turnier ist ein verifizierter Forenaccount notwendig \n- dafür ist deine Zustimmung zur Datenweiterverarbeitung im Ticketshop nötig (beim Kauf bzw. beim Setzen klickbar) \n- über die weiteren Schritte halten wir auf dem Laufenden :-) </ade>
+    <ade>Die Turniere zur DreamHack Leipzig LAN 2019 werden gerade noch ausgetüftelt und zugelost. Infos folgen!\n - Für eine erfolgreiche Anmeldung / Registrierung zu einem Turnier ist ein verifizierter Forenaccount notwendig \n- dafür ist deine Zustimmung zur Datenweiterverarbeitung im Ticketshop nötig (beim Kauf bzw. beim Setzen klickbar) \n- über die weiteren Schritte halten wir dich auf dem Laufenden :-) </ade>
     <ceng>tournamentreg</ceng>
     <qeng>What about the Tournament registration?</qeng>
     <aeng>The tournaments for DreamHack Leipzig LAN 2019 are still being figured out. More information will follow soon!\n - For a successful registration to a tournament, a verified Dreamhack Forum account is required \n- which needs your consent for data transfer in the ticket shop (can be clicked during ticket purchase or seating) \n- we will keep you informed about further steps :-)</aeng>
