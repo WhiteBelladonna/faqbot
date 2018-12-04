@@ -51,10 +51,20 @@
 <command>
     <cde>Platzreservierung</cde>
     <qde>Wann beginnt die Sitzplatzreservierung?</qde>
-    <ade>Die Sitzplatzreservierung startet voraussichtlich Mitte Dezember 2018. Eine E-Mail mit deinen Zugangsdaten wird dich informieren.</ade>
+    <ade>Die Sitzplatzreservierung startet um 20:00 am 13.12. für XMG und LAN Seat+ und am 14.12. für LAN Seat.
+    	Eine E-Mail mit deinen Zugangsdaten wird dich informieren.</ade>
     <ceng>seating</ceng>
     <qeng>When does the seating start?</qeng>
-    <aeng>Seating starts in mid December 2018. An E-Mail with a login will remind you.</aeng>
+    <aeng>Seating starts 20:00 on 13.12. for XMG Seats and LAN Seat+ and on 14.12. for standard LAN Seats.  
+    	An E-Mail with a login will remind you.</aeng>
+</command>
+<command>
+	<cde>Clanreservierung</cde>
+	<qde>Wie kann ich mit meinem Clan Sitzplätze reservieren?</qde>
+	<ade>Dein Clan-Leader wählt für eure Gruppe zunächst einen Sitzbereich aus. Im zweiten Schritt erhalten die Clan-Mitglieder eine E-Mail mit ihren Zugangsdaten und können sich innerhalb des Bereiches ihren Traumplatz auswählen!</ade>
+	<ceng>clanseating</ceng>
+	<qeng>How can I reserve seats with my clan?</qeng>
+	<aeng>In the first step, your clan leader selects a seating area for your clan. In the second phase, the clan members will receive an E-Mail with their login and can select their own seat within that area.</aeng>
 </command>
 <command>
     <cde>Parken</cde>
