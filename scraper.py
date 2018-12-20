@@ -17,8 +17,8 @@ def crawlTickets():
     sold = rem[3]
     sold = sold[16:]
 
-    max = rem[4]
-    max = max[12:]
-    max = max[:-1]
+    maxt = rem[4]
+    maxt = maxt[12:]
+    maxt = maxt[:-1]
 
-    return remaining, sold, max
+    return remaining, sold, maxt

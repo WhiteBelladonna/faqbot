@@ -204,8 +204,8 @@ async def help(ctx):
 @bot.command(name="remaining")
 async def remaining(ctx):
     if ctx.prefix == "f!":
-        remaining, sold, max = sc.crawlTickets()
-        remst = str(sold) + " / " + str(max)
+        remaining, sold, maxt = sc.crawlTickets()
+        remst = str(sold) + " / " + str(maxt)
         verst = str(remaining)
         embed = discord.Embed(color=dhorange)
         embed.add_field(name="Verkaufte Tickets:", value=remst, inline=False)
