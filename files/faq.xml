@@ -5,39 +5,53 @@
         <text>Die wichtigsten Informationen werden hier zeitnah zum Beginn der LAN ergänzt.</text>
     </category>
     <category>
+    	<name>PARKFLÄCHEN</name>
+    	<heading>Wo, Wie?</heading>
+    	<text>
+    		Die Anreise und das Parken bleibt für die DreamHack Leipzig 2019 wie gewohnt.
+			Um an der Halle 5 Parken zu dürfen, benötigt das Auto mindestens ein LAN-Seat+/LAN-Seat XMG Ticket.
+		</text>
+		<heading>Nützliche Links</heading>
+		<text>
+			[Übersichtskarte](https://www.google.com/maps/d/viewer?mid=13-QwvT4WTBxNIFw1i5iM8jznZZMxn7_c&ll=51.39611569334651%2C12.407522651138379&z=17)
+			Anreise mit dem [Auto](http://www.dreamhack-leipzig.de/de/info/messegelaende/Anfahrt-und-Parken/)
+			Cityparking	[Preise und Infos](https://city-parking.de/parken/standorte/leipzig/parkplaetze-leipziger-messe/)
+		</text>
+    </category>
+    <category>
     	<name>TURNIERE</name>
     	<heading>Main Contests</heading>
     	<text>
-    		Counter-Strike: Global Offensive /n
-			League of Legends /n
-			Hearthstone /n
-			Rocket League /n
-			Overwatch /n
-			Fortnite /n
+    		Counter-Strike: Global Offensive
+			League of Legends
+			Hearthstone
+			Rocket League
+			Overwatch
+			Fortnite
 			Playerunknown‘s Battleground (PUBG)
 		</text>
 		<heading>Extension Contests</heading>
 		<text>
-			Age of Empires II HD, 1v1 /n
-			Quake III Arena, 1v1 /n
-			Rainbow Six – Siege, 5v5 /n
-			Rocket League, 2v2 /n
-			Blobby Volley, 1v1 /n
-			Warcraft III TFT, 1v1 /n
-			Heroes oft he Storm, 5v5 /n
-			FIFA 19, 2v2 /n
-			FIFA 19, 1v1 /n
-			Starcraft II, 1v1 /n
-			Dota 2, 5v5 /n
-			CS:GO, 2v2 /n
-			CS 1.6, 5v5 /n
-			Battlefield 4 /n
-			Quake Champions, 1v1 /n	
+			Age of Empires II HD, 1v1
+			Quake III Arena, 1v1
+			Rainbow Six – Siege, 5v5
+			Rocket League, 2v2
+			Blobby Volley, 1v1
+			Warcraft III TFT, 1v1
+			Heroes oft he Storm, 5v5
+			FIFA 19, 2v2
+			FIFA 19, 1v1
+			Starcraft II, 1v1
+			Dota 2, 5v5
+			CS:GO, 2v2
+			CS 1.6, 5v5
+			Battlefield 4
+			Quake Champions, 1v1
 		</text>
 		<heading>Offline Turniere</heading>
 		<text>
-			Schere-Stein-Papier /n
-			Kicker /n
+			Schere-Stein-Papier
+			Kicker
 			Jenga
 		</text>
 		<heading>Weitere Infos</heading>
@@ -46,9 +60,18 @@
 		</text>
     </category>
     <category>
+    	<name>TURNIERANMELDUNG</name>
+    	<heading>Wie geht das?</heading>
+    	<text>Für eine erfolgreiche Anmeldung / Registrierung zu einem Turnier ist ein verifizierter Forenaccount notwendig - dafür ist deine Zustimmung zur Datenweiterverarbeitung im Ticketshop nötig (beim Kauf bzw. beim Setzen klickbar)</text>
+    	<heading>Wann geht das?</heading>
+    	<text>Ca. 1 Monat vor Beginn der LAN, bis ca 1 Stunde vor Beginn des Turniers.</text>
+    </category>
+    <category>
         <name>PLATZRESERVIERUNG</name>
         <heading>Wie kann ich einen LAN-Seat+ bzw. einen XMG-Seat reservieren?</heading>
-        <text>Für Dich gibt es schon einen ganzen Tag vorher die Möglichkeit der Sitzplatzreservierung. Dies bedeutet, dass Du am 13.12.18 um 20:00 Uhr Deinen Hot Spot reservieren kannst. Auch Du erhältst – natürlich entsprechend auch schon etwas eher – den Link zur Reservierung sowie den Zugangscode.</text>
+        <text>
+        	Für Dich gibt es schon einen ganzen Tag vorher die Möglichkeit der Sitzplatzreservierung. Dies bedeutet, dass Du am 13.12.18 um 20:00 Uhr Deinen Hot Spot reservieren kannst. Auch Du erhältst – natürlich entsprechend auch schon etwas eher – den Link zur Reservierung sowie den Zugangscode.
+        </text>
         <heading>Wie kann ich einen LAN-Seat reservieren?</heading>
         <text>Für Dich startet die Sitzplatzreservierung am 14.12.18 um 20:00 Uhr. Du wirst von uns vorab den Link zur Sitzplatzreservierung sowie den Zugangscode erhalten. Mit diesen beiden Items wirst Du dann Deine Traumplatzierung innerhalb der LAN erreichen.</text>
         <heading>Wie kann ich mit meinem Clan Sitzplätze reservieren?</heading>
@@ -57,6 +80,44 @@
         <heading>Weitere Fragen…Before it’s gettin‘ salty!</heading>
         <text>Du benötigst weitere Infos zum Prozess? Kein Thema! Melde Dich einfach unter 0341 678 8754 oder congressregistration@leipziger-messe.de mit einer freundlichen Auskunft. Somit stehen Dir alle Türen für eine vorzeitige Platzierung offen!</text>
     </category>
+    <category>
+    	<name>PAVILLONS</name>
+    	<heading>Darf ich?</heading>
+    	<text>
+    		Überbauten (Zelt, Pavillon, etc.) sind im LANBereich grundsätzlich untersagt. Eine Ausnahme für Pavillons ohne Seitenwände kann bei vorhandener Brandschutzzertifizierung (B1) sowie zusammenhängend überdeckter Fläche von weniger als 30 m² sowie einem Abstand von 3 Metern zwischen überbauten Elementen erteilt werden. Die Prüfung erfolgt vor Ort. Ein Anspruch auf Ausnahmeerteilung besteht nicht. Zusätzlich gilt, dass kein Gegenstand die Fluchtwege und die Gänge beeinträchtigen darf.
+    	</text>
+    </category>
+    <category>
+    	<name>KÜHLSCHRÄNKE, ZAPFANLAGEN & WEITERES</name>
+    	<heading>Darf ich meine [Küchengerät hier einfügen] mitbringen?</heading>
+    	<text>
+    		Das Mitbringen von Kühlschränken, Wasserkochern, Sandwichtoastern, Zapfanlagen (auch ohne Gasflaschen!), Slushimaschinen, Thermomix, Backöfen und sonstigen Küchengeräten ist nicht gestattet! Für mehr Infos siehe Punkt 5.4 der [AGB](http://www.dreamhack-leipzig.de/media/PDF/2019/DRM19-LAN-AGB-Ticketshop-DE.pdf)
+			Der Zugriff auf Backöfen und Wasserkocher wird vermutlich wieder über eine Kitchenette möglich sein.
+    	</text>
+    </category>
+    <category>
+    	<name>LAN.USER19</name>
+    	<heading>Wie werde ich LAN.User (so hübsch grün?)</heading>
+    	<text>
+    		Drei Schritte sind nötig:
+			1. Beim Ticketkauf musst du deiner Datenweiterverarbeitung im Forum zustimmen, damit das Forum dir einen Account erstellt und/oder anhand deiner E-Mailadresse (Ticketbestellmailadresse = Forumaccountmailadresse) diesen als gültigen Account verifiziert. 
+			2. In deinem [Forenprofil](https://forum.dreamhack-leipzig.de/my/preferences/profile) trägst du deine Discord-ID im Format NICKNAMEWIEIMCHANNEL#NUMMER ein.
+			3. Der lustige Support-Bot läuft immer mal über die Profile und vergibt im Channel das Grün.
+    	</text>
+    </category>
+    <category>
+    	<name>MITGLIEDER ZUM CLAN HINZUFÜGEN</name>
+    	<heading>Wie geht das?!?!</heading>
+    	<text>
+    		Ausgangsbasis: du bist Clanleader und hast schon feierlich für deine Mitspieler bestellt. Mit den Daten deiner Bestellung (Spielername, Mailadresse, Bestellnummer) und der Bestellung des Hinzuzufügenden wendest du dich dann vertrauensvoll an die Verwalterin des LAN-Shops (congressregistration@leipziger-messe.de)
+    	</text>
+    </category>
+    <category>
+    	<name>GASTSERVER</name>
+    	<heading>Wo kann ich mich bewerben?</heading>
+    	<text>Im [Forum](https://forum.dreamhack-leipzig.de/t/gaesteserver-zur-dreamhack/2421)</text>
+    </category>
+
     <!--<category>
     	<name></name>
     	<heading></heading>
