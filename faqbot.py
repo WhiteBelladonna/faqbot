@@ -160,7 +160,7 @@ async def restart(ctx):
 async def rtfm(ctx):
     if ctx.prefix == "d!":
         if ctx.author.id == ADMIN:
-            async for message in ctx.channel.history(limit=100):
+            async for message in ctx.channel.history(limit=50):
                 if message.author == bot.user:
                     await message.delete()
             faq, titles = rtfmgen.generatePost()

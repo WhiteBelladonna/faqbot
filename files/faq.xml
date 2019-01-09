@@ -13,7 +13,7 @@
 		</text>
 		<heading>Nützliche Links</heading>
 		<text>
-			[Übersichtskarte](https://www.google.com/maps/d/viewer?mid=13-QwvT4WTBxNIFw1i5iM8jznZZMxn7_c&ll=51.39611569334651%2C12.407522651138379&z=17)
+			[Übersichtskarte](https://www.google.com/maps/d/viewer?mid=13-QwvT4WTBxNIFw1i5iM8jznZZMxn7_c&amp;ll=51.39611569334651%2C12.407522651138379&amp;z=17)
 			Anreise mit dem [Auto](http://www.dreamhack-leipzig.de/de/info/messegelaende/Anfahrt-und-Parken/)
 			Cityparking	[Preise und Infos](https://city-parking.de/parken/standorte/leipzig/parkplaetze-leipziger-messe/)
 		</text>
@@ -88,7 +88,7 @@
     	</text>
     </category>
     <category>
-    	<name>KÜHLSCHRÄNKE, ZAPFANLAGEN & WEITERES</name>
+    	<name>KÜHLSCHRÄNKE, ZAPFANLAGEN &amp; WEITERES</name>
     	<heading>Darf ich meine [Küchengerät hier einfügen] mitbringen?</heading>
     	<text>
     		Das Mitbringen von Kühlschränken, Wasserkochern, Sandwichtoastern, Zapfanlagen (auch ohne Gasflaschen!), Slushimaschinen, Thermomix, Backöfen und sonstigen Küchengeräten ist nicht gestattet! Für mehr Infos siehe Punkt 5.4 der [AGB](http://www.dreamhack-leipzig.de/media/PDF/2019/DRM19-LAN-AGB-Ticketshop-DE.pdf)
