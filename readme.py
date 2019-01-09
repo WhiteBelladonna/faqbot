@@ -33,10 +33,11 @@ def generatePost():
         ph3.append(ph1)
         ph3.append(ph2)
         post.append(generateEmbed(ph3))
-    return post, titles
+    return post
 
 def generateTitle(stuff):
     title = "**=================================\n" + stuff + "\n" + "=================================**"
+    return title
 
 def generateEmbed(liststuff):
     embed = discord.Embed(color=dhorange)
