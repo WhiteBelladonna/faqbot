@@ -8,6 +8,7 @@ import datetime
 import subprocess
 import sys
 import languageki as ki
+import readme as rtfm
 
 import time
 import random
@@ -154,6 +155,17 @@ async def restart(ctx):
                 subprocess.Popen([sys.executable, "./restart.py"])
                 await bot.close()
                 return
+
+@bot.command(name="rtfm")
+async def rtfm(ctx):
+    if ctx.author.id == ADMIN:
+        async for message in ctx.channel.history(limit=100):
+            if message.author == bot.user:
+                await message.delete()
+        faq = rtfm.generatePost()
+        for post in faq:
+            await ctx.message.channel.send("", embed=post)
+        return
 
 @bot.command(name="update")
 async def update(ctx):
