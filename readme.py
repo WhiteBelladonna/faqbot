@@ -20,7 +20,7 @@ def generatePost():
     global post,titles
     root = read(filepath,'faq.xml')
     for i in range(len(root)):
-        title = generateTitle(root[i][0].text)
+        title = generateTitle(str(root[i][0].text))
         titles.append(title)
         ph1 = []
         ph2 = []
@@ -36,7 +36,7 @@ def generatePost():
     return post
 
 def generateTitle(stuff):
-    title = "**=================================\n" + stuff + "\n" + "=================================**"
+    title = "**=================================\n" + str(stuff) + "\n" + "=================================**"
     return title
 
 def generateEmbed(liststuff):
