@@ -32,7 +32,6 @@ def generatePost():
         ph3.append(ph1)
         ph3.append(ph2)
         post.append(generateEmbed(ph3))
-    print(post)
     return post
 
 def generateTitle(stuff):

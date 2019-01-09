@@ -8,7 +8,7 @@ import datetime
 import subprocess
 import sys
 import languageki as ki
-import readme as rtfm
+import readme as rtfmgen
 
 import time
 import random
@@ -163,8 +163,8 @@ async def rtfm(ctx):
             async for message in ctx.channel.history(limit=100):
                 if message.author == bot.user:
                     await message.delete()
-            faq = rtfm.generatePost()
-            async for post in faq:
+            faq = rtfmgen.generatePost()
+            for post in faq:
                 await ctx.message.channel.send("", embed=post)
             return
 
