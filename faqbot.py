@@ -158,14 +158,15 @@ async def restart(ctx):
 
 @bot.command(name="rtfm")
 async def rtfm(ctx):
-    if ctx.author.id == ADMIN:
-        async for message in ctx.channel.history(limit=100):
-            if message.author == bot.user:
-                await message.delete()
-        faq = rtfm.generatePost()
-        for post in faq:
-            await ctx.message.channel.send("", embed=post)
-        return
+    if ctx.prefix == "d!":
+        if ctx.author.id == ADMIN:
+            async for message in ctx.channel.history(limit=100):
+                if message.author == bot.user:
+                    await message.delete()
+            faq = rtfm.generatePost()
+            async for post in faq:
+                await ctx.message.channel.send("", embed=post)
+            return
 
 @bot.command(name="update")
 async def update(ctx):
