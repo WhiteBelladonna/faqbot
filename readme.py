@@ -56,5 +56,3 @@ def get(root, name):
         else:
             lst.append(ph.text)        
     return lst
-
-generatePost()
