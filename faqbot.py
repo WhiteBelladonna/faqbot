@@ -164,8 +164,6 @@ async def rtfm(ctx):
                 if message.author == bot.user:
                     await message.delete()
             faq, titles = rtfmgen.generatePost()
-            print(str(faq))
-            print(str(titles))
             for i in range(len(faq)):
                 await ctx.message.channel.send(titles[i], embed=None)
                 await ctx.message.channel.send("", embed=faq[i])

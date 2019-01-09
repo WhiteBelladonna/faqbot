@@ -18,6 +18,8 @@ def read(filepath, filename):
 #function to generate a post
 def generatePost():
     global post,titles
+    post = []
+    titles = []
     root = read(filepath,'faq.xml')
     for i in range(len(root)):
         title = generateTitle(str(root[i][0].text))
@@ -33,6 +35,7 @@ def generatePost():
         ph3.append(ph1)
         ph3.append(ph2)
         post.append(generateEmbed(ph3))
+    print(post)
     return post, titles
 
 def generateTitle(stuff):
