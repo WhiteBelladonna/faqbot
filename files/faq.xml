@@ -1,8 +1,49 @@
 <faq>
     <category>
         <name>LIES MICH ZUERST</name>
-        <heading></heading>
+        <heading>Coming Soon</heading>
         <text>Die wichtigsten Informationen werden hier zeitnah zum Beginn der LAN ergänzt.</text>
+    </category>
+    <category>
+    	<name>TURNIERE</name>
+    	<heading>Main Contests</heading>
+    	<text>
+    		Counter-Strike: Global Offensive /n
+			League of Legends /n
+			Hearthstone /n
+			Rocket League /n
+			Overwatch /n
+			Fortnite /n
+			Playerunknown‘s Battleground (PUBG)
+		</text>
+		<heading>Extension Contests</heading>
+		<text>
+			Age of Empires II HD, 1v1 /n
+			Quake III Arena, 1v1 /n
+			Rainbow Six – Siege, 5v5 /n
+			Rocket League, 2v2 /n
+			Blobby Volley, 1v1 /n
+			Warcraft III TFT, 1v1 /n
+			Heroes oft he Storm, 5v5 /n
+			FIFA 19, 2v2 /n
+			FIFA 19, 1v1 /n
+			Starcraft II, 1v1 /n
+			Dota 2, 5v5 /n
+			CS:GO, 2v2 /n
+			CS 1.6, 5v5 /n
+			Battlefield 4 /n
+			Quake Champions, 1v1 /n	
+		</text>
+		<heading>Offline Turniere</heading>
+		<text>
+			Schere-Stein-Papier /n
+			Kicker /n
+			Jenga
+		</text>
+		<heading>Weitere Infos</heading>
+		<text>
+			[klickst du hier!](http://www.dreamhack-leipzig.de/de/lan/turniere/)
+		</text>
     </category>
     <category>
         <name>PLATZRESERVIERUNG</name>
@@ -16,4 +57,9 @@
         <heading>Weitere Fragen…Before it’s gettin‘ salty!</heading>
         <text>Du benötigst weitere Infos zum Prozess? Kein Thema! Melde Dich einfach unter 0341 678 8754 oder congressregistration@leipziger-messe.de mit einer freundlichen Auskunft. Somit stehen Dir alle Türen für eine vorzeitige Platzierung offen!</text>
     </category>
+    <!--<category>
+    	<name></name>
+    	<heading></heading>
+    	<text></text>
+    </category>-->
 </faq>

@@ -1,5 +1,6 @@
 import xml.etree.ElementTree as ET
 import discord
+import parseutils as pu
 
 #define the filepath
 filepath = './files/'
@@ -29,9 +30,9 @@ def generatePost():
         ph3 = []
         for j in range(1,len(root[i])):
             if root[i][j].tag == "heading":
-                ph1.append(root[i][j].text)
+                ph1.append(pu.cparse(root[i][j].text))
             if root[i][j].tag == "text":
-                ph2.append(root[i][j].text)
+                ph2.append(pu.cparse(root[i][j].text))
         ph3.append(ph1)
         ph3.append(ph2)
         post.append(generateEmbed(ph3))
