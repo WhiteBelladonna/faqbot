@@ -17,6 +17,7 @@ def read(filepath, filename):
 
 #function to generate a post
 def generatePost():
+    global post,titles
     root = read(filepath,'faq.xml')
     for i in range(len(root)):
         title = generateTitle(root[i][0].text)
