@@ -43,10 +43,10 @@
 <command>
     <cde>Tickets</cde>
     <qde>Wann startet der Ticketverkauf?</qde>
-    <ade>Der Vorverkauf startet am 11.09.2018 auf der [Website](http://www.dreamhack-leipzig.de/tickets).Die Preise und Ausstattungen können [hier](http://www.dreamhack-leipzig.de/de/info/tickets/Oeffnungszeiten-und-Preise/) eingesehen werden!</ade>
+    <ade>Der Vorverkauf ist am 11.09.2018 auf der [Website](http://www.dreamhack-leipzig.de/tickets) gestartet.Die Preise und Ausstattungen können [hier](http://www.dreamhack-leipzig.de/de/info/tickets/Oeffnungszeiten-und-Preise/) eingesehen werden!</ade>
     <ceng>tickets</ceng>
-    <qeng>When do the ticket sales start?</qeng>
-    <aeng>Ticket sales start on the 11th of September 2018 on the [website](http://www.dreamhack-leipzig.de/en/tickets).Ticket prices can be found [here](http://www.dreamhack-leipzig.de/de/info/tickets/Oeffnungszeiten-und-Preise/)!</aeng>
+    <qeng>When did the ticket sales start?</qeng>
+    <aeng>Ticket sales started on the 11th of September 2018 on the [website](http://www.dreamhack-leipzig.de/en/tickets).Ticket prices can be found [here](http://www.dreamhack-leipzig.de/de/info/tickets/Oeffnungszeiten-und-Preise/)!</aeng>
 </command>
 <command>
     <cde>Platzreservierung</cde>
@@ -69,7 +69,7 @@
 <command>
     <cde>Parken</cde>
     <qde>Wo und wie kann ich parken?</qde>
-    <ade>Eine Übersicht über die Parkflächen erhältst du auf der [DreamHack Leipzig Website](http://www.dreamhack-leipzig.de/de/info/anreise-und-unterkunft/anreise/). \nUm an der Halle 5 Parken zu dürfen, benötigt das Auto mindestens ein LAN-Seat+/LAN-Seat XMG Ticket.</ade>
+    <ade>Eine Übersicht über die Parkflächen erhältst du auf der [DreamHack Leipzig Website](http://www.dreamhack-leipzig.de/de/info/messegelaende/Anfahrt-und-Parken/). \nUm an der Halle 5 Parken zu dürfen, benötigt das Auto mindestens ein LAN-Seat+/LAN-Seat XMG Ticket.</ade>
     <ceng>parking</ceng>
     <qeng>Where and how can I park?</qeng>
     <aeng>An overview over parking spaces is available on the official [DreamHack Leipzig website](http://www.dreamhack-leipzig.de/en/info/arrival-and-accommodation/anreise/).</aeng>
@@ -94,10 +94,10 @@
 <command>
     <cde>Turniere</cde>
     <qde>Welche Turniere gibt es?</qde>
-    <ade>Bisher wurden noch keine Turniere bekanntgegeben. Du kannst aber im [Forum](https://forum.dreamhack-leipzig.de/t/wunschturniere/2401) Für deine Wunschturniere abstimmen.</ade>
+    <ade>Infos zu den Main Tournaments, Extension Tournaments und Offline Tournaments und den Preispools findest du [hier](http://www.dreamhack-leipzig.de/de/lan/turniere/).</ade>
     <ceng>tournaments</ceng>
     <qeng>Which tournaments will be held?</qeng>
-    <aeng>As of today, no tournaments have been announced yet.</aeng>
+    <aeng>Info about the Main Tournaments, Extension Tournaments and Offline Tournaments can be found [here](http://www.dreamhack-leipzig.de/en/lan/tournaments/).</aeng>
 </command>
 <command>
     <cde>Tisch</cde>
@@ -142,10 +142,10 @@
 <command>
     <cde>Turnieranmeldung</cde>
     <qde>Wer was wann wie wo mit der Turnieranmeldung?</qde>
-    <ade>Die Turniere zur DreamHack Leipzig LAN 2019 werden gerade noch ausgetüftelt und zugelost. Infos folgen!\n - Für eine erfolgreiche Anmeldung / Registrierung zu einem Turnier ist ein verifizierter Forenaccount notwendig \n- dafür ist deine Zustimmung zur Datenweiterverarbeitung im Ticketshop nötig (beim Kauf bzw. beim Setzen klickbar) \n- über die weiteren Schritte halten wir dich auf dem Laufenden :-) </ade>
+    <ade>Die Anmeldung für die LAN-Turniere startet am 25.1.19 um 18.00. Anmelden kannst du dich [hier](https://turniere.dreamhack-leipzig.de/). \nFür eine erfolgreiche Anmeldung / Registrierung zu einem Turnier ist ein verifizierter Forenaccount notwendig \n- dafür ist deine Zustimmung zur Datenweiterverarbeitung im Ticketshop nötig (beim Kauf bzw. beim Setzen klickbar) \n- über die weiteren Schritte halten wir dich auf dem Laufenden :-) </ade>
     <ceng>tournamentreg</ceng>
     <qeng>What about the Tournament registration?</qeng>
-    <aeng>The tournaments for DreamHack Leipzig LAN 2019 are still being figured out. More information will follow soon!\n - For a successful registration to a tournament, a verified Dreamhack Forum account is required \n- which needs your consent for data transfer in the ticket shop (can be clicked during ticket purchase or seating) \n- we will keep you informed about further steps :-)</aeng>
+    <aeng>The tournament registration will start on 25 January at 6pm. You can register [here](https://turniere.dreamhack-leipzig.de/). \n - For a successful registration to a tournament, a verified Dreamhack Forum account is required \n- which needs your consent for data transfer in the ticket shop (can be clicked during ticket purchase or seating) \n- we will keep you informed about further steps :-)</aeng>
     <keywords>Turnier</keywords>
 </command>
 <!--<command>
@@ -156,21 +156,21 @@
     <qeng></qeng>
     <aeng></aeng>
 </command>-->
-<!--<command>
+<command>
     <cde>f!Hardwareverleih</cde>
     <qde>Wird es wieder einen Hardwareverleih geben?</qde>
-    <ade>Ein Hardwareverleih wurde bereits bestätigt, jedoch sind noch keine genaueren Details bekannt. Diese werden hier natürlich nach Bekanntgabe ergänzt.</ade>
+    <ade>Dieses Jahr kann eine streng limitierte Anzahl von eSports Monitore von ZOWIE/BenQ kostenlos über den [Zusatzleistungsshop](https://tickets.leipziger-messe.de/drm19-lan-zl) gemietet werden. Dies ist ab dem 1.2. um 12.00 Uhr möglich. XMG Seats sind hiervon ausgenommen.</ade>
     <ceng>f!rentals</ceng>
     <qeng>Will I be able to rent hardware again?</qeng>
-    <aeng>Yes, hardware rentals are already confirmed. The details are yet to be announced though.</aeng>
+    <aeng>This year, a limited number of eSports Monitors can be rented for free via the [Seating Addons](https://tickets.leipziger-messe.de/drm19-lan-zl). Booking will start on 1 February at 12pm. XMG Seats are excluded.</aeng>
 </command>
 <command>
     <cde>f!Stühle</cde>
     <qde>Wie sieht es mit Gaming-Stühlen aus?</qde>
-    <ade>Ein Verleih von Stühlen wurde bereits bestätigt. Weitere Details werden hier nach Bekanntgabe ergänzt.</ade>
+    <ade>Ein neues streng limitiertes Kontingent an Stühlen wurde freigegeben. Buchung ist möglich ab dem 31.1. um 12.00 über den [Zusatzleistungsshop](https://tickets.leipziger-messe.de/drm19-lan-zl). XMG Seats sind hiervon ausgenommen.</ade>
     <ceng>f!chairs</ceng>
     <qeng>Will I be able to rent a gaming chair?</qeng>
-    <aeng>Yes, chair rentals are already confirmed. Further details will be added soon.</aeng>
+    <aeng>A limited amount of chairs will be available for rental on 31 January at 12pm via the [Seating Addons](https://tickets.leipziger-messe.de/drm19-lan-zl). XMG Seats are excluded.</aeng>
 </command>-->
 <command>
     <cde>Frage</cde>
